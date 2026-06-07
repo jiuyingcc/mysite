@@ -1,0 +1,133 @@
+
+
+.alxq_banner img {
+  max-width: 100%;
+}
+
+.alxq_mod1 {
+  width: 100%;
+  overflow: hidden;
+  margin: 5rem 0;
+}
+.alxq_jt img {
+  /* width: 100%; */
+  height: 485px;
+  object-fit: cover;
+}
+
+.alxq_jt {
+	width: 100%;
+	position: relative;
+	float: left;
+	margin-bottom: 100px;
+  padding: 50px 0;
+	text-align: center;
+}
+.alxq_mod1:hover .alxq_jt .swiper-button-next, .alxq_mod1:hover .alxq_jt .swiper-button-prev {
+  display: flex;
+}
+
+.portfolio-single-content p {
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  overflow: auto;
+}
+
+.alxq_jt img {
+	/* width: 100%; */
+	height: 485px;
+	object-fit: contain;
+}
+
+.alxq_jt .swiper-button-next, .alxq_jt .swiper-button-prev {
+  display: none;
+  background: none;
+  background-color: #0072ff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.alxq_jt .swiper-button-next .jy-swiper-button-icon, .alxq_jt .swiper-button-prev .jy-swiper-button-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.alxq_jt .swiper-button-next {
+	right: -20px;
+}
+
+.alxq_jt .swiper-button-prev {
+	left: -20px;
+}
+
+.alxq_jt .swiper-pagination {
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+}
+
+.alxq_jt .swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	margin: 0 4px !important;
+	opacity: 1;
+	background: #7FB8FF;
+}
+
+.alxq_content .alxq_jt .swiper-pagination span.swiper-pagination-bullet-active {
+  background: #0072ff !important;
+}
+.alxq_content .alxq_jt .swiper-pagination span.swiper-pagination-bullet-active:hover {
+  background: #0072ff !important;
+}
+
+.alxq_mod2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.alxq_mod2 img {
+  width: 100%;
+  float: left;
+}
+
+@media only screen and (max-width: 1400px) {
+  .alxq_mod2 .allp {
+    width: 100% !important;
+  }
+}
+.alxq_mod2 .allp,
+.alxq_mod2 .alxq {
+  /* float: left; */
+  margin: 30px 0;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.alxq_mod2 .alxq {
+  width: 100%;
+}
+
+.alxq_mod2 .allp video {
+  width: 100%;
+  height: 718px;
+  border: 2px #ededed solid;
+}
+
+@media only screen and (max-width: 700px) {
+  .container #jy-introduce {
+    margin-top: 0;
+  }
+  .portfolio-single-content {
+    padding: 0 !important;
+  }
+  .portfolio-single-content p {
+    max-height: 100px;
+    font-size: 14px;
+  }
+}

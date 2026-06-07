@@ -1,0 +1,276 @@
+/* 品牌互动营销优势 */
+.advantage {
+    width: 100%;
+    background: #fff;
+    padding-bottom: 5%;
+}
+
+.advantage_content {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2%;
+  row-gap: 100px;
+  margin-top: 5%;
+}
+.advantage_content li {
+  list-style: none;
+  width: 48%;
+  display: flex;
+  align-items: center;
+} 
+.advantage_content li:hover {
+  font-weight: bold;
+  cursor: default;
+}
+.advantage_content li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+  color: #585858;
+}
+.advantage_content li div span {
+  font-size: 30px;
+  margin-bottom: 3%;
+}
+.advantage_content li div p {
+  font-size: 19px;
+  line-height: 40px;
+}
+
+/* 橙色背景活动图标 */
+.activity {
+  padding: 60px 0 80px 0;
+  width: 100%;
+  background: #FF744E;
+}
+.activity ul {
+  display: flex;
+  list-style: none;
+  row-gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.activity ul li {
+  display: block;
+  text-align: center;
+}
+.activity ul li img {
+  transform: rotateY(0deg);
+	transition: 0.35s;
+}
+.activity ul li img:hover {
+  transform: rotateY(180deg);
+	transition: 0.35s;
+}
+.activity ul li div {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #fff;
+}
+
+/* 适用场景 */
+.scene {
+  padding: 0px 0 5% 0;
+  width: 100%;
+  background: #fff;
+}
+.scene_content {
+  width: 100%;
+  padding-top: 7%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 80px;
+}
+.scene_content li{
+  list-style: none;
+  max-width: 600px;
+  font-size: 18px;
+  width: 25%;
+  text-align: center;
+}
+.scene_content li img {
+  margin-bottom: 5%;
+}
+
+/* 丰富的营销功能 */
+.marketing_function {
+  width: 100%;
+  background-color: #f8f9fa;
+}
+.marketing_content {
+  padding: 4% 0px 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.marketing_content li {
+  width: 23%;
+  height: 570px;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.16);
+  cursor: default;
+}
+.marketing_content li .content_top {
+  width: 100%;
+  height: 99px;
+  font-size: 23px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: cover;
+  color: #fff;
+  padding-top: 35px;
+  padding-left: 18px;
+  margin-bottom: 10px;
+}
+.marketing_content li .content_msg {
+  font-size: 20px;
+  color: #585858;
+  font-weight: bold;
+  line-height: 63px;
+  height: 9%;
+  margin: 0 20px;
+}
+.marketing_content li .content_msg:nth-of-type(odd) {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+.marketing_content li .button{
+  width: 140px;
+  height: 52px;
+  margin: 20% auto 0;
+  border-radius: 34px;
+  background-color: #008EFF;
+  color: #fff;
+  font-size: 19px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marketing_content li .button a {
+    color: #FFF;
+}
+
+/* 精彩案例 */
+.wonderful_case {
+  background-color: #fff;
+}
+.wonderful_case .wonderful_tab {
+  margin: 4% auto 0;
+  width: 91%;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  display: flex;
+  padding: 3% 0;
+  font-size: 30px;
+  color: #585858;
+}
+.wonderful_case .wonderful_tab li {
+  width: 25%;
+  text-align: center;
+}
+.wonderful_case .wonderful_tab li img {
+  width: 20%;
+}
+.wonderful_case .wonderful_tab li span {
+  width: 50%;
+}
+.wonderful_case .wonderful_tab li:not(:first-child) {
+  border-left: 1px solid rgba(112, 112, 112, 0.3);
+}
+.wonderful_case .wonderful_tab li .tab_content {
+  font-size: 19px;
+  margin-top: 10%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  justify-content: center;
+}
+.wonderful_case .wonderful_tab li .tab_content .text {
+  width: 45%;
+  min-width: 85px;
+  word-wrap: break-word;
+}
+.wonderful_case .phone {
+  display: flex;
+  justify-content: space-between;
+}
+.wonderful_case .phone img {
+  width: 23.5%;
+  margin-bottom: 80px;
+}
+
+
+@media only screen and (max-width: 920px) {
+  /* 品牌互动营销优势 */
+  .advantage_content {
+    row-gap: 20px;
+  }
+  .advantage_content li div {
+    margin-left: 5px;
+  }
+  .advantage_content li div span {
+    font-size: 10px;
+  }
+  .advantage_content li div p {
+    font-size: 5px;
+    line-height: 10px;
+  }
+  .advantage_content li img {
+    width: 20%;
+  }
+  /* 橙色背景活动图标 */
+.activity {
+  padding: 3% 0 4% 0;
+}
+.activity ul {
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.activity ul li img {
+  width: 50%;
+}
+.activity ul li div {
+  text-align: center;
+  margin-top: 3%;
+  font-size: 10px;
+  color: #fff;
+}
+  /* 适用场景 */
+  .scene_content {
+    row-gap: 0px;
+  }
+  .scene_content li div {
+    font-size: 10px;
+  }
+  /* 丰富的营销功能 */
+  .marketing_content li {
+    width: 80%;
+  }
+  /* 精选案例 */
+  .wonderful_case .wonderful_tab {
+    font-size: 20px;
+  }
+  .wonderful_case .wonderful_tab li .tab_content {
+    font-size: 13px;
+    row-gap: 10px;
+  }
+  .scene_content li img {
+    width: 40%;
+    font-size: 8px;
+  }
+}

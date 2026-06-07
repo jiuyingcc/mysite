@@ -1,0 +1,392 @@
+<!--浮动-->
+<div id="new-float-sidebar-game" class="new-float-box-game">
+    <ul>
+        <li>
+            <a target="_blank"
+                href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989">
+                <i class="icon-service-game">
+                    <img style="width: 46px; height: 46px;" src="/fixpic/one.png" alt="在线咨询">
+                </i>
+                <span>在线咨询</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" id="phoneinum-game">
+                <i class="icon-phone-game">
+                    <img style="width: 46px; height: 46px;" src="/fixpic/two.png" alt="电话咨询">
+                </i>
+                <span>电话咨询</span>
+                <div class="phone-popup-game">15000568602</div>
+            </a>
+        </li>
+        <li>
+            <a href="#section-contact">
+                <i class="icon-plan-game">
+                    <img style="width: 46px; height: 46px;" src="/fixpic/three.png" alt="获取方案">
+                </i>
+                <span>获取方案</span>
+            </a>
+        </li>
+        <li>
+            <a href="javascript:void(0);" class="wechat-trigger-game">
+                <i class="icon-wechat-game">
+                    <img style="width: 46px; height: 46px;" src="/fixpic/fix.png" alt="关注微信">
+                </i>
+                <span>微信咨询</span>
+                <div class="wechat-popup-game">
+                    <img style="width: 100%; height: 100%;" src="/fixpic/wxcode.jpg" alt="微信">
+                </div>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<style>
+    .new-float-box-game {
+        position: fixed;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9999;
+    }
+
+    .new-float-box-game ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        /* background: linear-gradient(180deg, #1e90ff 0%, #0066cc 100%); */
+        background: #0B6FFF;
+        border-radius: 20px 0 0 20px;
+        box-shadow: -4px 0 20px rgba(30, 144, 255, 0.4);
+    }
+
+    .new-float-box-game ul li {
+        position: relative;
+        /* width: 100px;
+        height: 100px; */
+        width: 108px;
+        height: 93px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+    }
+
+    .new-float-box-game ul li:last-child {
+        border-bottom: none;
+    }
+
+    .new-float-box-game ul li:first-child {
+        border-radius: 20px 0 0 0;
+    }
+
+    .new-float-box-game ul li:last-child {
+        border-radius: 0 0 0 20px;
+    }
+
+    .new-float-box-game ul li a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        opacity: 0.7;
+    }
+
+    .new-float-box-game ul li:hover a {
+        opacity: 1;
+    }
+
+    .new-float-box-game ul li:hover {
+        /* background: rgba(255, 255, 255, 0.15); */
+        background: #095DD6;
+    }
+
+    .new-float-box-game ul li i {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    .new-float-box-game ul li i svg {
+        color: #fff;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    }
+
+    .new-float-box-game ul li i img {
+        transition: transform 0.3s ease;
+    }
+
+    .new-float-box-game ul li:hover i img {
+        /* transform: scale(1.1); */
+    }
+
+    .new-float-box-game ul li span {
+        font-size: 13px;
+        color: #fff;
+        white-space: nowrap;
+        text-align: center;
+        font-weight: 500;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    /* 电话弹出框 */
+    .new-float-box-game .phone-popup-game {
+        /* display: none;
+        position: absolute;
+        left: -150%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 15px;
+        background: rgba(30, 30, 30, 0.95);
+        backdrop-filter: blur(10px);
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 8px;
+        white-space: nowrap;
+        font-size: 16px;
+        font-weight: 600;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); */
+        display: none;
+        position: absolute;
+        left: -160%;
+        top: 50%;
+        transform: translateY(-50%) scale(1.2);
+        margin-right: 15px;
+        background: rgba(50, 50, 50, 0.95);
+        backdrop-filter: blur(10px);
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        white-space: nowrap;
+        font-size: 14px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    #phoneinum-game {
+        position: relative;
+    }
+
+    .new-float-box-game .phone-popup-game::after {
+        content: '';
+        position: absolute;
+        right: -8px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-left: 8px solid rgba(30, 30, 30, 0.95);
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+    }
+
+    .new-float-box-game ul li:hover .phone-popup-game {
+        display: block;
+    }
+
+    #phoneinum-game:hover .phone-popup-game {
+        display: block !important;
+    }
+
+    /* 微信二维码弹出框 */
+    .new-float-box-game .wechat-popup-game {
+        display: none;
+        position: absolute;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 15px;
+        background: #fff;
+        padding: 15px;
+        border-radius: 12px;
+        width: 200px;
+        height: 200px;
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+    }
+
+    .new-float-box-game .wechat-popup-game img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        border-radius: 8px;
+    }
+
+    .new-float-box-game .wechat-popup-game::after {
+        content: '';
+        position: absolute;
+        right: -8px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-left: 8px solid #fff;
+        border-top: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+    }
+
+    .new-float-box-game ul li:hover .wechat-popup-game {
+        display: block;
+    }
+
+    /* 响应式 */
+    /* @media (max-width: 768px) {
+        .new-float-box-game {
+            right: 5px;
+        }
+
+        .new-float-box-game ul li {
+            width: 70px;
+            height: 70px;
+        }
+
+        .new-float-box-game ul li i svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .new-float-box-game ul li span {
+            font-size: 11px;
+        }
+    } */
+</style>
+
+<!-- 留资 -->
+<section id="section-contact" class="page-section" style="padding: 5rem 0;"
+    data-onepage-settings="{&quot;offset&quot;:60,&quot;speed&quot;:&quot;1500&quot;,&quot;easing&quot;:&quot;easeInOutExpo&quot;}">
+    <div class="heading-block text-center">
+        <!-- <h2>联系我们</h2> -->
+        <img src="/image-jy/contact_us.png">
+    </div>
+    <div class="container">
+        <div class="row align-items-stretch col-mb-50 mb-0">
+            <!-- 表单 -->
+            <div class="col-lg-6">
+                <div class="form-widget">
+                    <div class="form-result"></div>
+                    <form class="mb-0" id="template-contactform" name="template-contactform" action="include/form.php"
+                        method="post" novalidate="novalidate">
+                        <div class="form-process">
+                            <div class="css3-spinner">
+                                <div class="css3-spinner-scaler"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 form-group">
+                                <input type="text" id="template-contactform-name" name="template-contactform-name"
+                                    value="" class="form-control required" placeholder="你的姓名" style="font-size: 20px;">
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <input type="email" id="template-contactform-email" name="template-contactform-email"
+                                    value="" class="required email form-control" placeholder="你的公司"
+                                    style="font-size: 20px;">
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <input type="text" id="template-contactform-phone" name="template-contactform-phone"
+                                    value="" class="form-control" placeholder="你的电话" style="font-size: 20px;">
+                            </div>
+                            <div class="w-100"></div>
+                            <div class="col-12 form-group-textarea">
+                                <style>
+                                    textarea.form-control-textarea::placeholder {
+                                        color: #979797;
+                                        font-family: Rubik, sans-serif;
+                                    }
+                                </style>
+                                <textarea class="required form-control-textarea" id="template-contactform-message"
+                                    name="template-contactform-message" rows="7" cols="30"
+                                    style="color: #979797;font-size: 20px;" placeholder="合作需求"></textarea>
+                            </div>
+                            <div class="col-12 form-group d-none">
+                                <input type="text" id="template-contactform-botcheck"
+                                    name="template-contactform-botcheck" value="" class="form-control">
+                            </div>
+                            <div class="col-12 form-group-button" style="margin-bottom: 0" onclick="loadAddMsg()">
+                                <a href="javascript:void(0);" style="font-size: 20px;"
+                                    class="jy-button jy-button-blue button-large contact-button">
+                                    <span>联系我们</span>
+                                </a>
+                            </div>
+                        </div>
+                        <input type="hidden" name="prefix" value="template-contactform-">
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6" style="height: 410px;">
+                <!-- <iframe src="https://www.9shadow.com/baidumap_dark.html" frameborder="0" scrolling="no" width="100%" height="364"></iframe> -->
+                <img style="width: 100%;height: 410px; object-fit: cover;" src="/gameDevelopment/image-jy/new/map.jpg"
+                    alt="map">
+            </div>
+
+            <!-- 相关信息 -->
+            <div class="w-100">
+                <div class="row col-mb-50">
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature-box fbox-center fbox-bg fbox-plain" style="height: 100%;">
+                            <div class="fbox-icon" style="background-color: #f8f9fa;">
+                                <img src="/gameDevelopment/image-jy/new/contact_icon1.png" alt="address">
+                            </div>
+                            <div class="fbox-content">
+                                <h3><span class="subtitle"
+                                        style="font-size: 0.95rem;">上海市浦东新区御北路235弄<br />1号张江科学城数智天地智慧云T1栋503单元
+                                    </span></h3>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature-box fbox-center fbox-bg fbox-plain" style="height: 100%;">
+                            <div class="fbox-icon" style="background-color: #f8f9fa;">
+                                <img src="/gameDevelopment/image-jy/new/contact_icon2.png" alt="address">
+                            </div>
+                            <div class="fbox-content">
+                                <h3><span class="subtitle">021-50309719
+                                    </span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature-box fbox-center fbox-bg fbox-plain show-wxcode" style="height: 100%;">
+                            <div class="fbox-icon" style="background-color: #f8f9fa;">
+                                <img src="/gameDevelopment/image-jy/new/contact_icon3.png" alt="address">
+                                <img class="wxcodeImg" src="https://www.9shadow.com/image-jy/wxcode.jpg">
+                            </div>
+                            <div class="fbox-content">
+                                <h3><span class="subtitle">15000568602</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="feature-box fbox-center fbox-bg fbox-plain show-wxcode" style="height: 100%;">
+                            <div class="fbox-icon" style="background-color: #f8f9fa;">
+                                <img src="/gameDevelopment/image-jy/new/contact_icon4.png" alt="address">
+                            </div>
+                            <div class="fbox-content">
+                                <h3> <a href="mailto:sales@9shadow.com">
+                                        <span class="subtitle">sales@9shadow.com</span></a></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<div class="foot_b game_foot">
+    <a target="_blank" href="https://beian.miit.gov.cn" style="color:rgba(255,255,255,.4) !important;">2014-2026
+        上海九影网络科技有限公司 9shadow.com All
+        rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;
+        沪ICP备15007980号-1</a>
+    <a target="_blank" style="color:rgba(255,255,255,.4) !important;"
+        href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31011502012998">&nbsp;&nbsp;&nbsp;&nbsp;<img
+            src="https://www.9shadow.com/image-jy/foot_img5.png" /> 沪公网安备
+        31011502012998号</a>
+</div>

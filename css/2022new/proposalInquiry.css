@@ -1,0 +1,405 @@
+/* 方案咨询 */
+/* 产品策略+服务设计 */
+.product {
+    width: 100%;
+    padding-bottom: 5%;
+}
+.product_content {
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product_content li {
+    width: 20%;
+    text-align: center;
+    cursor: default;
+}
+.product_content li:hover {
+    font-weight: bold;
+}
+.product_content li:hover img{
+    transition: all .3s;
+    transform: scale(1.2);
+}
+.product_content li img {
+    margin-bottom: 25px;
+    transition: all .3s;
+}
+.product_content li h2 {
+    line-height: 50px;
+    color: #008EFF;
+    font-size: 30px;
+}
+.product_content li p {
+    line-height: 35px;
+    color: #585858;
+    font-size: 19px;
+}
+/* 需求分析7大要素 */
+.demandAnalysis {
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: #EBEDEF;
+}
+.demandAnalysis_content {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+.demandAnalysis_img {
+    position: relative;
+    padding-bottom: 30px;
+}
+.demandAnalysis_img li{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    color: #008EFF;
+    width: 40%;
+    height: 13%;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 142, 255, 0.5);
+    border-radius: 31px;
+    padding: 0 4px;
+    font-size: 19px;
+    cursor: default;
+}
+.demandAnalysis_img li:hover {
+    background: #008EFF;
+    box-shadow: 0px 0px 0px rgba(0, 142, 255, 0);
+    color: #fff;
+}
+.demandAnalysis_img li:hover div {
+    background-color: #fff;
+    color: #008EFF;
+}
+.demandAnalysis_img li div{
+    width: 17.2%;
+    height: 88%;
+    border-radius: 50%;
+    background-color: #C9E7FF;
+    font-size: 30px;
+    text-align: center;
+    line-height: 44px;
+    margin-right: 20px;
+}
+/* 方案策划 */
+.scenarioDesign {
+    width: 100%;
+    padding-bottom: 7%;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    cursor: default;
+}
+.scenarioDesign_content {
+    margin-top: 6%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    display: flex;
+}
+.scenarioDesign_sideBar {
+    width: 30%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    font-size: 25px;
+    color: #fff;
+}
+.scenarioDesign_sideBar p {
+    height: 73px;
+    line-height: 73px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.scenarioDesign_sideBar p:hover {
+    background-color: #008EFF;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.scenarioDesign_active {
+    background-color: #008EFF;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.scenarioDesign_content li {
+    width: 70%;
+    padding: 10px 30px;
+}
+.scenarioDesign_content li h2 {
+    height: 73px;
+    line-height: 73px;
+    font-size: 25px;
+    color: #fff;
+}
+.scenarioDesign_content li p {
+    height: 60px;
+    font-size: 19px;
+    color: #fff;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.scenarioDesign_content li div {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+/* 策划输出 */
+.planningOutput {
+    width: 100%;
+    padding-bottom: 5%;
+    background-color: #EBEDEF;
+}
+.planningOutput_content {
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.planningOutput_content li {
+    cursor: default;
+    width: 23%;
+    height: 277px;
+    margin-bottom: 2.7%;
+    border-radius: 8px;
+    color: #fff;
+}
+.planningOutput_shadow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    padding: 2% 5%;
+    transition: all .5s;
+}
+.planningOutput_shadow:hover {
+    background-color:rgba(0, 142, 255, 0.8);
+}
+.planningOutput_shadow:hover img {
+    opacity: 0;
+}
+.planningOutput_shadow:hover h2 {
+    transition: all .5s;
+    transform: translateY(-150px);
+}
+.planningOutput_shadow:hover p {
+    transition: all .5s;
+    opacity: 1;
+    transform: translateY(-280px);
+}
+.planningOutput_content li img {
+    margin-top: 15%;
+    transition: all .5s;
+}
+.planningOutput_content li h2 {
+    margin-top: 15%;
+    font-size: 30px;
+    transition: all .5s;
+}
+.planningOutput_content li p {
+    font-size: 19px;
+    line-height: 40px;
+    text-align: left;
+    margin-top: 150px;
+    transition: all .5s;
+    letter-spacing: 1px;
+    opacity: 0;
+}
+/* 游戏策划设计 */
+.gameDesign {
+    width: 100%;
+    padding-bottom: 5%;
+}
+.gameDesign_content {
+    margin-top: 6%;
+}
+.gameDesign_top {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 5%;
+}
+.gameDesign_bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.7%;
+    margin-bottom: 2%;
+}
+.gameDesign_content li {
+    width: 400px;
+    height: 210px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.16);
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 8px;
+    display: flex;
+    cursor: default;
+}
+.gameDesign_content li img {
+    width: 22%;
+    object-fit: contain;
+    margin-right: 10px;
+}
+.gameDesign_content li:hover {
+    border: 1px solid #008EFF;
+    box-shadow: 0px 3px 10px #008EFF;
+}
+.gameDesign_content li:hover p,.gameDesign_content li:hover span {
+    color: #008EFF;
+}
+.gameDesign_content span {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: bold;
+}
+.gameDesign_content p {
+    font-size: 19px;
+    line-height: 40px;
+    color: #585858;
+}
+
+/* 移动端 */
+@media only screen and (max-width:950px) {
+    /* 产品策略+服务设计 */
+    .product_content li {
+        width: 48%;
+    }
+    .product_content li:hover img{
+        transform: scale(1);
+    }
+    .product_content li img {
+        margin-bottom: 20px;
+    }
+    .product_content li h2 {
+        line-height: 30px;
+        font-size: 20px;
+    }
+    .product_content li p {
+        line-height: 20px;
+        font-size: 10px;
+    }
+    /* 方案策划 */
+    .scenarioDesign_sideBar {
+        width: 40%;
+        padding: 5px;
+        font-size: 10px;
+    }
+    .scenarioDesign_sideBar p {
+        height: 33px;
+        line-height: 33px;
+        padding-left: 5px;
+        margin-bottom: 5px;
+    }
+    .scenarioDesign_content li {
+        width: 60%;
+        padding: 5px 10px;
+    }
+    .scenarioDesign_content li h2 {
+        height: 33px;
+        line-height: 33px;
+        font-size: 10px;
+        color: #fff;
+    }
+    .scenarioDesign_content li p {
+        height: 50px;
+        font-size: 8px;
+        color: #fff;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+    .scenarioDesign_content li div {
+        padding-top: 15px;
+    }
+    .scenarioDesign_content li div img {
+        width: 20%;
+    }
+    /* 策划输出 */
+    .planningOutput_content li {
+        width: 48%;
+    }
+    .planningOutput_shadow:hover h2 {
+        transform: translateY(-120px);
+    }
+    .planningOutput_shadow:hover p {
+        transform: translateY(-250px);
+    }
+    .planningOutput_content li h2 {
+        font-size: 25px;
+    }
+    .planningOutput_content li p {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    /* 需求分析7大要素 */
+    .demandAnalysis_img {
+        width: 55%;
+    }
+    .demandAnalysis_img li {
+        padding: 0 2px;
+    }
+    .demandAnalysis_img li div{
+        width: 30.2% !important;
+        height: 88%;
+        border-radius: 50%;
+        background-color: #C9E7FF;
+        font-size: 30px;
+        text-align: center;
+        line-height: 44px;
+        margin-right: 20px;
+    }
+    .demandAnalysis_img li:hover {
+        background: #008EFF;
+        box-shadow: 0px 0px 0px rgba(0, 142, 255, 0);
+        color: #fff;
+    }
+    .demandAnalysis_img li:hover div {
+        background-color: #fff;
+        color: #008EFF;
+    }
+    .demandAnalysis_img li div{
+        border-radius: 50%;
+        width: 22% !important;
+        background-color: #C9E7FF;
+        font-size: 10px;
+        text-align: center;
+        margin-right: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .demandAnalysis_img li p {
+        font-size: 5px;
+    }
+    /* 游戏策划设计 */
+    .gameDesign_top {
+        margin-bottom: 0;
+        flex-wrap: wrap;
+    }
+    .gameDesign_bottom {
+        justify-content: center;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .gameDesign_content li {
+        width: 99%;
+        height: 210px;
+        padding: 10px 8px;
+        margin-bottom: 15px;
+    }
+    .gameDesign_content span {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .gameDesign_content p {
+        font-size: 18px;
+        line-height: 35px;
+    }
+}

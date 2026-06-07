@@ -1,0 +1,259 @@
+/* 元宇宙 */
+
+/* 解决方案 */
+.solution {
+    width: 100%;
+    /* background-color: #EBEDEF; */
+    padding-bottom: 5%;
+  }
+  .solutionedcon {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 5%;
+    box-sizing: border-box;
+  }
+  .solutionedcon ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    row-gap: 35px;
+  }
+  .solutionedcon ul li {
+    padding: 0;
+    /* float: left; */
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .solutionedcon ul li .shadow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px 0 10px 0;
+    transition: .35s;
+    -moz-transition: .35s;
+    -webkit-transition: .35s;
+    -o-transition: .35s;
+    transform: translateY(0);
+  }
+  
+  .solutionedcon ul li a {
+    display: block;
+  }
+  
+  .solutionedcon ul li a img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .solutionbox {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .solutionbox::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: height 0.35s linear;
+    background: #008EFF;
+    border-radius: 60px 0 60px 0;
+    opacity: 0;
+  }
+  
+  .solutionboxcon {
+    width: 100%;
+    position: relative;
+    height: 100%;
+  }
+  
+  .solutionbox h5 {
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    padding: 13% 0 0 13%;
+  }
+  
+  .solutionbox p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 30px;
+    box-sizing: border-box;
+    padding: 5% 5% 1% 13%;
+  }
+  .solutionboxcon div{
+    margin: 5% 2% 0 5%;
+    width: 30%;
+    border-bottom: 2px solid #fff;
+    box-sizing: border-box;
+    transition: .35s;
+    -moz-transition: .35s;
+    -webkit-transition: .35s;
+    -o-transition: .35s;
+    transform: translateY(150px);
+    /* opacity: 0; */
+  }
+  .solutionedcon ul li:hover .solutionbox::before {
+    /* height: 100%; */
+    opacity: 0.8;
+  }
+  
+  .solutionedcon ul li:hover .solutionboxcon div {
+    transform: translateY(0);
+    /* opacity: 1; */
+  }
+  /* .solutionedcon ul li:hover .shadow {
+    transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s; 
+    opacity: 0;
+  } */
+  .solutionedcon ul li:hover .solutionboxcon span {
+    transform: translateY(0);
+    opacity: 1;
+  }
+/* 元宇宙特性 */
+.yuanUniverseMetaverse {
+  width: 100%;
+  background-color: #EBEDEF;
+  padding-bottom: 5%;
+}
+.yuanUniverseMetaverse_content {
+  padding: 5% 0 0;
+  width: 80%;
+  margin: 0 auto;
+}
+/* 孕育元宇宙 */
+.metauniverse {
+  width: 100%;
+  padding-bottom: 5%;
+  /* background-color: #EBEDEF; */
+}
+.metauniverse_content {
+  width: 90%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 100px;
+  margin: 5% auto 0;
+}
+.metauniverse_content li {
+  list-style: none;
+  width: 49%;
+  display: flex;
+  align-items: flex-start;
+}
+.metauniverse_content li div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 3%;
+  color: #585858;
+}
+.metauniverse_content li div span {
+  font-size: 25px;
+  margin-bottom: 3%;
+}
+.metauniverse_content li div p {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+/* 为什么需要元宇宙 */
+.yuanUniverseSource {
+  width: 100%;
+  background-color: #EBEDEF;
+  padding-bottom: 5%;
+}
+.yuanUniverseSource .yuanUniverseSource_content {
+  text-align: center;
+  padding: 5% 0 0;
+  width: 80%;
+  margin: 0 auto;
+}
+/* 生态版图 */
+.territory {
+  width: 100%;
+  padding-bottom: 5%;
+  /* background-color: #EBEDEF; */
+}
+.territory_content {
+  width: 100%;
+  padding: 5% 0 0;
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* 项目特色 */
+.characteristic {
+  width: 100%;
+  background-color: #EBEDEF;
+  padding-bottom: 5%;
+}
+.characteristic_content {
+  text-align: center;
+  padding: 5% 0 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+
+
+@media only screen and (max-width: 920px) {
+  .electedCases .electedCases_content li div {
+    font-size: 10px;
+  }
+  .solutionedcon ul {
+    row-gap: 15px;
+  }
+  .solutionedcon ul li .shadow {
+    border-radius: 25px 0 25px 0;
+  }
+  .solutionbox::before {
+    border-radius: 25px 0 25px 0;
+  }
+  .solutionbox h5 {
+    font-size: 10px;
+    padding: 10% 0 0 13%;
+  }
+  
+  .solutionbox p {
+    font-size: 6px;
+    line-height: 10px;
+    padding: 2% 5% 5% 13%;
+  }
+  .metauniverse_content {
+    row-gap: 10px;
+  }
+  .metauniverse_content li {
+    align-items: center;
+  }
+  .metauniverse_content li div span {
+    font-size: 10px;
+    margin-bottom: 5%;
+  }
+  .metauniverse_content li div p {
+    font-size: 5px;
+    line-height: 10px;
+  }
+  .metauniverse_content li img {
+    width: 30%;
+  }
+}

@@ -1,0 +1,880 @@
+/* 游戏定制开发 */
+
+/* 为什么选择九影 */
+.gameChoose {
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.gameChoose .gameChoose_content {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6%;
+}
+.gameChoose .gameChoose_content .middle {
+    position: relative;
+    width: 380px;
+    height: 380px;
+}
+.gameChoose .gameChoose_content .middle p {
+    position: absolute;
+    font-size: 43px;
+    line-height: 57px;
+    color: #ffffff;
+    top: 50%;
+    margin-top: -65px;
+    left: 50%;
+    margin-left: -90px;
+}
+.gameChoose .gameChoose_content .middle img {
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gameChoose_animation1 {
+    animation: rotate1 7s linear infinite;
+}
+.gameChoose_animation2 {
+    animation: rotate2 7s linear infinite;
+}
+.gameChoose_animation3 {
+    animation: rotate3 7s linear infinite;
+}
+.gameChoose_animation4 {
+    animation: rotate4 7s linear infinite;
+}
+.gameChoose_animation5 {
+    animation: rotate5 14s linear infinite;
+}
+.gameChoose_animation6 {
+    animation: rotate6 14s linear infinite;
+}
+.gameChoose_animation7 {
+    animation: rotate7 14s linear infinite;
+}
+.gameChoose_animation8 {
+    animation: rotate8 14s linear infinite;
+}
+.gameChoose_animation9 {
+    animation: rotate9 28s linear infinite;
+}
+.gameChoose_animation10 {
+    animation: rotate10 28s linear infinite;
+}
+.gameChoose_animation11 {
+    animation: rotate11 28s linear infinite;
+}
+.gameChoose_animation12 {
+    animation: rotate12 28s linear infinite;
+}
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(90deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.8);
+    }
+    75% {
+        transform: rotate(270deg) scale(1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+@keyframes rotate2 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(90deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.6);
+    }
+    75% {
+        transform: rotate(270deg) scale(1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+@keyframes rotate3 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(90deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.7);
+    }
+    75% {
+        transform: rotate(270deg) scale(1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+@keyframes rotate4 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    25% {
+        transform: rotate(90deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(0.9);
+    }
+    75% {
+        transform: rotate(270deg) scale(1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+@keyframes rotate5 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    37.5% {
+        transform: rotate(270deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(0.9);
+    }
+    62.5% {
+        transform: rotate(450deg) scale(1);
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+    }
+}
+@keyframes rotate6 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    37.5% {
+        transform: rotate(270deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(0.6);
+    }
+    62.5% {
+        transform: rotate(450deg) scale(1);
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+    }
+}
+@keyframes rotate7 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    37.5% {
+        transform: rotate(270deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(0.7);
+    }
+    62.5% {
+        transform: rotate(450deg) scale(1);
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+    }
+}
+@keyframes rotate8 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    37.5% {
+        transform: rotate(270deg) scale(1);
+    }
+    50% {
+        transform: rotate(360deg) scale(0.8);
+    }
+    62.5% {
+        transform: rotate(450deg) scale(1);
+    }
+    100% {
+        transform: rotate(720deg) scale(1);
+    }
+}
+@keyframes rotate9 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    43.75% {
+        transform: rotate(630deg) scale(1);
+    }
+    50% {
+        transform: rotate(720deg) scale(0.6);
+    }
+    56.25% {
+        transform: rotate(810deg) scale(1);
+    }
+    100% {
+        transform: rotate(1440deg) scale(1);
+    }
+}
+@keyframes rotate10 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    43.75% {
+        transform: rotate(630deg) scale(1);
+    }
+    50% {
+        transform: rotate(720deg) scale(0.9);
+    }
+    56.25% {
+        transform: rotate(810deg) scale(1);
+    }
+    100% {
+        transform: rotate(1440deg) scale(1);
+    }
+}
+@keyframes rotate11 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    43.75% {
+        transform: rotate(630deg) scale(1);
+    }
+    50% {
+        transform: rotate(720deg) scale(0.7);
+    }
+    56.25% {
+        transform: rotate(810deg) scale(1);
+    }
+    100% {
+        transform: rotate(1440deg) scale(1);
+    }
+}
+@keyframes rotate12 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    43.75% {
+        transform: rotate(630deg) scale(1);
+    }
+    50% {
+        transform: rotate(720deg) scale(0.8);
+    }
+    56.25% {
+        transform: rotate(810deg) scale(1);
+    }
+    100% {
+        transform: rotate(1440deg) scale(1);
+    }
+}
+.gameChoose .gameChoose_content .left,.gameChoose .gameChoose_content .right {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 120px;
+}
+.gameChoose .gameChoose_content .left .top:hover,.gameChoose .gameChoose_content .left .bottom:hover,.gameChoose .gameChoose_content .right .top:hover,.gameChoose .gameChoose_content .right .bottom:hover {
+    font-weight: bold;
+}
+.gameChoose .gameChoose_content p {
+    font-size: 30px;
+    color: #008EFF;
+    margin-bottom: 20px;
+}
+.gameChoose .gameChoose_content span {
+    font-size: 22px;
+    color: #585858;
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+.gameChoose .gameChoose_content .top,.gameChoose .gameChoose_content .bottom {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* 服务项目汇总 */
+.projectSummary {
+    width: 100%;
+    padding-bottom: 5%;
+    background-image: linear-gradient(44deg,#FAB357,#FF8658);
+    position: relative;
+}
+.projectSummary_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+}
+.projectSummary_content>div {
+    width: 31%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 47px 90px 43px;
+    color: #585858;
+}
+.projectSummary_content>div:hover p,.projectSummary_content>div:hover li {
+    color: #008EFF;
+    cursor: default;
+}
+.projectSummary_content>div p {
+    font-size: 30px;
+    font-weight: bold;
+    margin:0 auto 42px;
+}
+.projectSummary_content>div li {
+    list-style-type: disc;
+    font-size: 23px;
+    line-height: 46px;
+}
+.projectSummary_content>div div {
+    width: 70%;
+    height: 13%;
+    margin: 15% auto 0;
+    background-color: #008EFF;
+    border-radius: 34px;
+    font-size: 19px;
+    line-height: 52px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+.projectSummary_content .one {
+    background-image: url('../../img_2022/ui_gameart.png');
+}
+.projectSummary_content .two {
+    background-image: url('../../img_2022/ui_gamecustomized.png');
+}
+.projectSummary_content .three {
+    background-image: url('../../img_2022/ui_gameplan.png');
+}
+
+/* 游戏类型支持 */
+.gameType {
+    width: 100%;
+    padding-bottom: 5%;
+    position: relative;
+}
+.gameType_content {
+    padding-top: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 80px;
+}
+.gameType_content li {
+    width: 32%;
+    height: 277px;
+    padding: 20px 13px;
+    display: flex;
+    position: relative;
+}
+.gameType_content li>div {
+    width: 50%;
+    overflow: hidden;
+}
+.gameType_content li>div img {
+    margin-top: 95px;
+    margin-bottom: 15px;
+    transition: all .3s;
+}
+.gameType_content li>div p {
+    opacity: 0;
+    font-size: 19px;
+    line-height: 35px;
+    color: #FFFFFF;
+    transition: all .3s;
+}
+.gameType_content li>img {
+    /* height: 325px; */
+    position: absolute;
+    top: -76px;
+    right: 0px;
+    transition: all .3s;
+}
+/* 游戏类型支持动画部分 */
+.gameType_content li:hover>img {
+    z-index: 10;
+    transform: translateX(50px);
+    transition: all .3s;
+}
+.gameType_content li:hover>div img {
+    transform: translateY(-95px);
+    transition: all .3s;
+}
+.gameType_content li:hover>div p {
+    opacity: 1;
+    transform: translateY(-95px);
+    transition: all .3s;
+}
+
+/* 效果展示 */
+.effectDisplay {
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 5%;
+    background-image: linear-gradient(44deg,#fab357,#ff8658);
+    position: relative;
+}
+.effectDisplay .effectDisplay_button {
+    width: 140px;
+    height: 52px;
+    margin: 0 auto;
+    border: 2px solid #FFFFFF;
+    border-radius: 34px;
+    font-size: 19px;
+    text-align: center;
+    line-height: 52px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+/* 客户权益 */
+.customerBenefits {
+    width: 100%;
+    padding-bottom: 5%;
+}
+.customerBenefits_content {
+    margin-top: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.customerBenefits_content img {
+    width: 48%;
+}
+.customerBenefits_content li {
+    width: 20%;
+    height: 288px;
+    overflow: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    color: #585858;
+    padding: 23px 16px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.customerBenefits_content li:hover {
+    cursor: default;
+    color: #008EFF;
+    border: 1px solid #008EFF;
+}
+.customerBenefits_content li:hover p {
+    border-bottom: 1px dashed #008EFF;
+}
+.customerBenefits_content li::-webkit-scrollbar {
+    width: 0;
+}
+.customerBenefits_content li:nth-child(1) {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.customerBenefits_content li:nth-child(3) {
+    margin-right: 10%;
+    margin-top: 5%;
+}
+.customerBenefits_content li:nth-child(4) {
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.customerBenefits_content li:nth-child(6) {
+    margin-right: 2%;
+    margin-top: 5%;
+}
+.customerBenefits_content li p{
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #585858;
+    text-align: center;
+}
+.customerBenefits_content li span {
+    font-size: 19px;
+    line-height: 38px;
+}
+
+/* 合作流程 */
+.collaborationProcess {
+    width: 100%;
+    padding-bottom: 5%;
+    background-image: linear-gradient(44deg,#fab357,#ff8658);
+    position: relative;
+}
+.collaborationProcess_content {
+    margin-top: 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1%;
+    row-gap: 60px;
+}
+.collaborationProcess_content li {
+    position: relative;
+    width: 19%;
+    height: 170px;
+    background-color: #ffffff;
+    padding: 20px 23px;
+    color: #585858;
+    cursor: default;
+    z-index: 2;
+}
+.collaborationProcess_content li:hover p,.collaborationProcess_content li:hover span {
+    color: #008EFF;
+    font-weight: bold;
+}
+.collaborationProcess_content li p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.collaborationProcess_content li span {
+    font-size: 19px;
+    line-height: 33px;
+}
+.collaborationProcess_content li img {
+    position: absolute;
+    right: 10px;
+    top: -25px;
+}
+
+/* 弹出动画 */
+
+#projectSummary_img {
+    width: 32%;
+    position: absolute;
+    left: 75%;
+    bottom: 55%;
+    opacity: 0;
+    z-index: 2;
+}
+#gameType_img {
+    width: 32%;
+    position: absolute;
+    right: 80%;
+    bottom: 93%;
+    opacity: 0;
+    z-index: 2;
+}
+#effectDisplay_img1 {
+    width: 13%;
+    position: absolute;
+    left: 90%;
+    bottom: 46%;
+    opacity: 0;
+    z-index: 2;
+}
+#effectDisplay_img2 {
+    width: 13%;
+    position: absolute;
+    right: 90%;
+    top: 40%;
+    opacity: 0;
+    z-index: 2;
+}
+#collaborationProcess_img1 {
+    width: 32%;
+    position: absolute;
+    left: 75%;
+    bottom: 60%;
+    opacity: 0;
+    z-index: 0;
+}
+#collaborationProcess_img2 {
+    width: 42%;
+    position: absolute;
+    right: 65%;
+    bottom: -2.9%;
+    opacity: 0;
+}
+
+
+.game_animation_right {
+    opacity: 1 !important;
+    animation: eject_right .5s;
+}
+.game_animation_left {
+    opacity: 1 !important;
+    animation: eject_left .5s;
+}
+@keyframes eject_right {
+    0% {
+        transform: translateX(300px);
+    }
+    50% {
+        transform: translateX(-150px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes eject_left {
+    0% {
+        transform: translateX(-300px);
+    }
+    50% {
+        transform: translateX(150px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* 适配 */
+@media only screen and (max-width:1350px) {
+    .projectSummary_content>div p {
+        font-size: 28px;
+    }
+    .projectSummary_content>div li {
+        font-size: 20px;
+    }
+    .projectSummary_content>div {
+        padding: 47px 80px 43px;
+    }
+}
+@media only screen and (max-width:960px) {
+    /* 项目汇总 */
+    .projectSummary_content>div p {
+        font-size:14px;
+        margin:0 auto 10px;
+    }
+    .projectSummary_content>div li {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .projectSummary_content>div {
+        padding: 23px 12px 23px;
+    }
+    .projectSummary_content>div div {
+        font-size: 10px;
+        line-height: 18px;
+    }
+    /* 为什么选择九影 */
+    .gameChoose .gameChoose_content .middle {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+    .gameChoose .gameChoose_content .middle p {
+        position: absolute;
+        font-size: 13px;
+        line-height: 20px;
+        color: #ffffff;
+        top: 50%;
+        margin-top: -20px;
+        left: 50%;
+        margin-left: -27px;
+    }
+    .gameChoose .gameChoose_content .middle img {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .gameChoose .gameChoose_content .left,.gameChoose .gameChoose_content .right {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    .gameChoose .gameChoose_content p {
+        font-size: 12px;
+        color: #008EFF;
+        margin-bottom: 10px;
+    }
+    .gameChoose .gameChoose_content span {
+        font-size: 8px;
+        color: #585858;
+        margin-bottom: 10px;
+        line-height: 15px;
+    }
+    .gameChoose .gameChoose_content .top,.gameChoose .gameChoose_content .bottom {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    /* 游戏类型支持 */
+    .gameType {
+        width: 100%;
+        padding-bottom: 5%;
+        position: relative;
+    }
+    .gameType_content {
+        padding-top: 6%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 40px;
+    }
+    .gameType_content li {
+        width: 32%;
+        height: 136px;
+        padding: 10px 7px;
+        display: flex;
+        position: relative;
+    }
+    .gameType_content li>div {
+        width: 40%;
+        overflow: hidden;
+    }
+    .gameType_content li>div img {
+        margin-top: 50px;
+        margin-bottom: 7px;
+        transition: all .3s;
+    }
+    .gameType_content li>div p {
+        opacity: 0;
+        font-size: 7px;
+        line-height: 10px;
+        color: #FFFFFF;
+        transition: all .3s;
+    }
+    .gameType_content li>img {
+        width: 65%;
+        /* height: 325px; */
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        transition: all .3s;
+    }
+    /* 游戏类型支持动画部分 */
+    .gameType_content li:hover>img {
+        z-index: 10;
+        transform: translateX(10px);
+        transition: all .3s;
+    }
+    .gameType_content li:hover>div img {
+        transform: translateY(-45px);
+        transition: all .3s;
+    }
+    .gameType_content li:hover>div p {
+        opacity: 1;
+        transform: translateY(-45px);
+        transition: all .3s;
+    }
+    /* 客户权益 */
+    .customerBenefits_content {
+        padding-bottom: 10px;
+    }
+    .customerBenefits_content img {
+        width: 36%;
+        object-fit: contain;
+    }
+    .customerBenefits_content li {
+        width: 28%;
+        height: 120px;
+        padding: 10px 5px;
+    }
+    .customerBenefits_content li:hover {
+        cursor: default;
+        color: #008EFF;
+        border: 1px solid #008EFF;
+    }
+    .customerBenefits_content li:hover p {
+        border-bottom: 1px dashed #008EFF;
+    }
+    .customerBenefits_content li::-webkit-scrollbar {
+        width: 0;
+    }
+    .customerBenefits_content li:nth-child(1) {
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .customerBenefits_content li:nth-child(3) {
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+    .customerBenefits_content li:nth-child(4) {
+        margin-left: 2%;
+        margin-top: 5%;
+    }
+    .customerBenefits_content li:nth-child(6) {
+        margin-right: 2%;
+        margin-top: 5%;
+    }
+    .customerBenefits_content li p{
+        font-size: 8px;
+        font-weight: bold;
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        border-bottom: 1px dashed #585858;
+        text-align: center;
+    }
+    .customerBenefits_content li span {
+        font-size: 7px;
+        line-height: 7px;
+        opacity: 0.5;
+    }
+    /* 效果展示 */
+    .effectDisplay .banner-swiper-button-next {
+        right: 15px !important;
+        opacity: 0.5;
+    }
+    .effectDisplay .banner-swiper-button-prev {
+        left: 15px !important;
+        opacity: 0.5;
+    }
+    .effectDisplay .effectDisplay_button {
+        width: 70px;
+        height: 26px;
+        margin: 0 auto;
+        border: 2px solid #FFFFFF;
+        border-radius: 17px;
+        font-size: 9px;
+        text-align: center;
+        line-height: 23px;
+        color: #FFFFFF;
+        cursor: pointer;
+    }
+    /* 合作流程 */
+    .collaborationProcess_content {
+        row-gap: 20px;
+    }
+    .collaborationProcess_content li {
+        position: relative;
+        width: 19%;
+        height: 88px;
+        padding: 10px 5px 0px;
+    }
+    .collaborationProcess_content li p {
+        font-size: 8px;
+        font-weight: bold;
+        padding-bottom: 1px;
+    }
+    .collaborationProcess_content li span {
+        font-size: 7px;
+        line-height: 5px;
+    }
+    .collaborationProcess_content li img {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        right: 5px;
+        top: -8px;
+    }
+    /* #projectSummary_img {
+        display: none;
+    }
+    #gameType_img {
+        display: none;
+    }
+    #effectDisplay_img1 {
+        display: none;
+    }
+    #effectDisplay_img2 {
+        display: none;
+    }
+    #collaborationProcess_img1 {
+        display: none;
+    }
+    #electedCases_img {
+        display: none;
+    } */
+}

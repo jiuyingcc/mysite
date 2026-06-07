@@ -1,0 +1,157 @@
+/* 服务介绍 */
+.goodService {
+  width: 100%;
+  padding-bottom: 5%;
+}
+.goodService .goodService_content {
+  width: 80%;
+  margin: 5% auto 0;
+}
+
+/* 项目特色 */
+.projectFeatures {
+  background-color: #f8f9fa;
+  padding-bottom: 5%;
+}
+.projectFeatures .projectFeatures_content {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0 0;
+  gap: 5%;
+}
+.projectFeatures .projectFeatures_content ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+.projectFeatures .projectFeatures_content ul li{
+  width: 30%;
+  height: 50%;
+  font-size: 19px;
+  text-align: center;
+}
+.projectFeatures .projectFeatures_content ul li img {
+  margin-bottom: 5%;
+}
+
+/* 产品架构 */
+.productArchitecture {
+  width: 100%;
+  padding-bottom: 5%;
+}
+.productArchitecture .productArchitecture_content {
+  margin: 5% 0 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.productArchitecture .productArchitecture_content li {
+  width: 45%;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 26px;
+  margin-bottom: 5%;
+  padding: 0 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.productArchitecture .productArchitecture_content li:hover .bg{
+  background-color: #008EFF;
+  animation: tram 0.8s;
+  height: 100%;
+}
+@keyframes tram {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+.productArchitecture .productArchitecture_content li .bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  border-radius: 26px;
+  top: 0;
+  left: 0;
+  animation: retram 0.8s;
+}
+@keyframes retram {
+  0% {
+    background-color: #008EFF;
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
+/* @keyframes retram {
+  0% {
+    background-color: #008EFF;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+} */
+.productArchitecture .productArchitecture_content li .icon {
+  width: 70%;
+}
+.productArchitecture .productArchitecture_content li .text {
+  margin: -10% auto 5%;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+}
+.productArchitecture .productArchitecture_content li:hover .hover {
+  /* display: block; */
+  opacity: 1;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transform: translateY(-20%);
+}
+.hover {
+  /* display: none; */
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transform: translateY(20%);
+}
+.hover img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* 教学资源 */
+.teachingResources {
+  padding: 0px 0 100px 0;
+  width: 100%;
+  background: #f8f9fa;
+}
+.teachingResources_content {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 5%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 920px){.projectFeatures .projectFeatures_content ul li{
+  font-size: 9px;
+}
+.productArchitecture .productArchitecture_content li .text {
+  font-size: 20px;
+  margin: -5% auto 0;
+}
+}

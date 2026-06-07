@@ -1,0 +1,388 @@
+/* 元宇宙互动营销展厅制作 */
+
+/* 主营产品 */
+.mainProduct {
+    width: 100%;
+}
+
+.mainProduct .mainProduct_content {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mainProduct .mainProduct_content li {
+    width: 22%;
+    border-radius: 10px;
+    padding: 40px 0 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url('/img_2023/xnzt_zycp_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mainProduct .mainProduct_content li:nth-child(1):hover {
+    background-image: url('/img_2023/xnzt_zycp_xn.png');
+}
+
+.mainProduct .mainProduct_content li:nth-child(2):hover {
+    background-image: url('/img_2023/xnzt_zycp_3d.png');
+}
+
+.mainProduct .mainProduct_content li:nth-child(3):hover {
+    background-image: url('/img_2023/xnzt_zycp_yyz.png');
+}
+
+.mainProduct .mainProduct_content li:nth-child(4):hover {
+    background-image: url('/img_2023/xnzt_zycp_vr.png');
+}
+
+.mainProduct .mainProduct_content li:hover {
+    color: #FFFFFF;
+}
+
+.mainProduct .mainProduct_content li p,
+.mainProduct .mainProduct_content li h3 {
+    color: inherit;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.mainProduct .mainProduct_content li .checkDetails,
+.onlineExhibition .checkDetails {
+    width: 120px;
+    height: 46px;
+    background-color: #008EFF;
+    border-radius: 34px;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    line-height: 46px;
+    margin: 30px auto 0;
+}
+
+/* 线上展会系统 */
+.onlineExhibition {
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.onlineExhibition .checkDetails {
+    width: 180px;
+    white-space: pre-wrap;
+}
+
+.onlineExhibition .swiper-img {
+    border-radius: 15px;
+}
+
+.onlineExhibition .swiper-container {
+    padding-top: 40px;
+}
+
+.onlineExhibition_content {
+    text-align: center;
+}
+
+.onlineExhibition_content .show_img {
+    width: 964px;
+    margin: 0 auto;
+}
+
+.onlineExhibition .swiper-slide::after {
+    content: attr(data-jy-swiper-slide-title);
+    width: 120px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #bbb;
+          background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 0%,    /* 左侧：黑色半透明（alpha=0.6） */
+    rgba(0, 0, 0, 0.4) 50%,    /* 中间：黑色更浓（alpha=0.8），突出渐变层次 */
+    rgba(0, 0, 0, 0) 100%    /* 右侧：与左侧一致，对称过渡 */
+  );
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+}
+
+/* 解决方案 */
+.solution {
+    width: 100%;
+}
+
+.solution .solution_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.solution .solution_content li {
+    width: 28%;
+    letter-spacing: 2px;
+    word-break: break-all;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.solution .solution_content li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.solution .solution_content li div {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.solution .solution_content li span {
+    font-size: 19px;
+    color: #bbb;
+}
+
+.solution .solution_content li p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* 优势方案 */
+.superiorTrial {
+    width: 100%;
+    background-color: #f8f9fa;
+}
+
+.superiorTrial .superiorTrial_content {
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+}
+
+.superiorTrial .superiorTrial_content .swiper-slide {
+    background-color: #ffffff;
+    display: flex;
+}
+
+.superiorTrial .superiorTrial_content .swiper-slide img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.superiorTrial .superiorTrial_content .swiper-slide .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    padding: 40px 30px 40px;
+}
+
+.superiorTrial .superiorTrial_content .swiper-slide .content span {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.superiorTrial .superiorTrial_content .swiper-slide .content ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 20px 0;
+}
+
+.superiorTrial .superiorTrial_content .swiper-slide .content li {
+    padding: 10px 20px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: rgb(66,120,166);
+    border: 1px solid rgb(66,120,166);
+    background-color: #cce6ff;
+    flex-shrink: 0;
+}
+
+.superiorTrial .superiorTrial_content .swiper-slide .content .box {
+    flex: 1;
+    background-color: #eee;
+    overflow: hidden;
+    border-radius: 20px;
+    width: 100%;
+    padding: 20px 15px;
+}
+
+.superiorTrial .superiorTrial_content .swiper-slide .content .box div {
+    font-size: 20px;
+    line-height: 40px;
+    height: 100%;
+    overflow: auto;
+}
+
+/* swiper-pagination ------start */
+.superiorTrial .swiper-pagination2 {
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.superiorTrial .swiper-pagination-bullet {
+    width: 13px;
+    height: 13px;
+    margin: 0 8px !important;
+    opacity: 1;
+    background: #ddd;
+}
+
+.superiorTrial .swiper-pagination2 span.swiper-pagination-bullet-active {
+    background: #aaa !important;
+}
+
+.superiorTrial .swiper-pagination2 span.swiper-pagination-bullet-active:hover {
+    background: #aaa !important;
+}
+/* swiper-pagination ------end */
+
+@media only screen and (max-width: 1000px) {
+    .mainProduct .mainProduct_content {
+        justify-content: space-evenly;
+    }
+
+    .mainProduct .mainProduct_content li {
+        width: 320px;
+        margin-bottom: 25px;
+    }
+
+    .superiorTrial .superiorTrial_content {
+        height: 400px;
+    }
+
+    .superiorTrial .superiorTrial_content .swiper-slide .content {
+        padding: 25px 20px 25px;
+    }
+    
+    .superiorTrial .superiorTrial_content .swiper-slide .content span {
+        font-size: 24px;
+    }
+    
+    .superiorTrial .superiorTrial_content .swiper-slide .content ul {
+        margin: 15px 0;
+    }
+    
+    .superiorTrial .superiorTrial_content .swiper-slide .content li {
+        padding: 7px 15px;
+        border-radius: 22px;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+    
+    .superiorTrial .superiorTrial_content .swiper-slide .content .box {
+        padding: 18px 13px;
+    }
+    
+    .superiorTrial .superiorTrial_content .swiper-slide .content .box div {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .solution .solution_content {
+        justify-content: start;
+    }
+
+    .solution .solution_content li {
+        width: 50%;
+    }
+
+    .superiorTrial .superiorTrial_content {
+        height: 350px;
+    }
+
+    .superiorTrial .superiorTrial_content .swiper-slide .content {
+        padding: 20px 15px 20px;
+    }
+
+    .superiorTrial .superiorTrial_content .swiper-slide .content span {
+        font-size: 20px;
+    }
+
+    .superiorTrial .superiorTrial_content .swiper-slide .content ul {
+        margin: 10px 0;
+    }
+    
+    .superiorTrial .superiorTrial_content .swiper-slide .content li {
+        padding: 5px 10px;
+        border-radius: 20px;
+        margin-right: 4px;
+        margin-bottom: 6px;
+        font-size: 12px;
+    }
+
+    .superiorTrial .superiorTrial_content .swiper-slide .content .box {
+        padding: 15px 11px;
+    }
+    
+    .superiorTrial .superiorTrial_content .swiper-slide .content .box div {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .solution .solution_content li div {
+        font-size: 20px;
+    }
+
+    .solution .solution_content li span {
+        font-size: 14px;
+    }
+
+    .solution .solution_content li p {
+        font-size: 16px;
+    }
+
+    .superiorTrial .superiorTrial_content {
+        height: 300px;
+    }
+
+    .superiorTrial .superiorTrial_content .swiper-slide .content {
+        padding: 15px 10px 15px;
+    }
+
+    .superiorTrial .superiorTrial_content .swiper-slide .content span {
+        font-size: 16px;
+    }
+
+    .superiorTrial .superiorTrial_content .swiper-slide .content ul {
+        margin: 6px 0;
+    }
+    
+    .superiorTrial .superiorTrial_content .swiper-slide .content li {
+        padding: 3px 5px;
+        border-radius: 15px;
+        margin-right: 3px;
+        margin-bottom: 3px;
+        font-size: 10px;
+    }
+
+    .superiorTrial .superiorTrial_content .swiper-slide .content .box {
+        padding: 12px 8px;
+    }
+    
+    .superiorTrial .superiorTrial_content .swiper-slide .content .box div {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,2285 @@
+<!--
+ * @Author: sxw s9x9w9@163.com
+ * @Date: 2023-03-23 10:12:03
+ * @LastEditors: sxw s9x9w9@163.com
+ * @LastEditTime: 2023-06-15 10:23:59
+ * @FilePath: \guanwang-new\index.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!-- 首页 -->
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta http-equiv="x-ua-compatible" content="IE=edge" />
+		<meta name="author" content="SemiColonWeb" />
+		<meta name="baidu-site-verification" content="codeva-uKUH7uYiqb" />
+		<!-- icon -->
+		<link rel="icon" href="image-jy/jy_logo.ico" />
+		<!-- 引入字体 - 异步加载避免阻塞渲染 -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+		<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=PT+Serif:ital@0;1&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+		<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=PT+Serif:ital@0;1&display=swap" rel="stylesheet" /></noscript>
+
+		<!-- 图片懒加载 - 延迟加载 -->
+		<script type="text/javascript" src="./jy-js/lozad.min.js" defer></script>
+
+		<!-- 核心样式 -->
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="jy-css/style-jymodule.css" />
+		<link rel="stylesheet" href="jy-css/style-jychange.css" />
+
+		<!-- banner图翻页样式 -->
+		<link rel="stylesheet" href="include/rs-plugin/css/settings.css" media="screen" />
+		<link rel="stylesheet" href="include/rs-plugin/css/layers.css" />
+		<link rel="stylesheet" href="include/rs-plugin/css/navigation.css" />
+		<link rel="stylesheet" href="css/swiper.min.css" />
+
+		<!-- css图标库 -->
+		<link rel="stylesheet" href="css/font-icons.css" />
+
+		<!-- 定制css -->
+		<!-- <link rel="stylesheet" href="css/custom.css" /> -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- <title>软件开发_小程序开发_虚拟仿真开发_虚拟展厅开发_数据可视化_APP开发_元宇宙开发</title>
+		<meta name="description" content="上海九影专注软件定制开发13年，提供：游戏开发、元宇宙/虚拟仿真开发、AR/VR/数字人制作、小程序/H5开发/动画制作、App/网站开发、系统定制、三维展示/3D建模、CRM/OA/ERP软件开发等。" />
+		<meta name="keywords" content="软件定制开发_应用系统开发_小程序定制_虚拟防真开发_3D建模_虚拟展厅制作_数字展厅制作_VR制作_AR制作" />
+		 -->
+		<!-- <title>九影网络-软件开发_小程序开发_虚拟仿真开发_元宇宙开发_虚拟展厅开发_品牌营销H5_APP开发</title>
+		<meta name="description"
+			content="上海九影网络致力于软件开发,小程序开发,虚拟仿真开发,元宇宙开发,虚拟展厅开发,品牌营销H5,数据可视化,APP开发业务。以客户为中心,打造极致合作体验,系统搭建从域名到服务器选购等我们提供包办,全程一条龙服务。" />
+		<meta name="keywords" content="软件定制开发,小程序开发,虚拟仿真开发,VR|AR开发,3D建模,虚拟展厅开发,APP开发,数据可视化,3D展示,网站开发,品牌营销H5" />
+		 -->
+
+		<title>九影网络-数智化定制解决方案丨游戏开发_软件开发_VR开发_元宇宙开发_h5游戏_虚拟展厅_小程序开发_APP开发_虚拟仿真开发</title>
+		<meta name="description" content="上海九影网络是数智化定制解决方案提供商，提供游戏开发、软件开发、AR/VR开发、元宇宙开发、h5游戏开发、虚拟展厅开发、小程序开发、APP开发、虚拟仿真开发等一站式定制开发解决方案。" />
+		<meta name="keywords" content="九影网络,游戏开发,软件开发,AR开发,VR开发,元宇宙开发,h5游戏开发,虚拟展厅开发,小程序开发,APP开发,虚拟仿真开发" />
+
+		<!-- jQuery 保持同步加载（其他脚本依赖） -->
+		<script src="js/jquery.js"></script>
+
+		<!-- 埋点SDK - 延迟加载 -->
+		<script src="jy-js/tracker.js" defer></script>
+		<script>
+			// 等待 tracker.js 加载完成后初始化
+			document.addEventListener('DOMContentLoaded', function() {
+				if (typeof JYTracker !== 'undefined') {
+					JYTracker.init({
+						// apiUrl: 'http://192.168.0.30:8080/api/events', // 替换为后端接口地址
+						// debug: true, // 开发环境设为 true，生产环境设为 false
+					});
+				}
+			});
+		</script>
+		<style>
+			.revo-slider-emphasis-text {
+				font-size: 64px;
+				font-weight: 700;
+				letter-spacing: -1px;
+				font-family: 'Poppins', sans-serif;
+				padding: 15px 20px;
+				border-top: 2px solid #fff;
+				border-bottom: 2px solid #fff;
+			}
+
+			.revo-slider-desc-text {
+				font-size: 20px;
+				font-family: 'Lato', sans-serif;
+				width: 650px;
+				text-align: center;
+				line-height: 1.5;
+			}
+
+			.revo-slider-caps-text {
+				font-size: 16px;
+				font-weight: 400;
+				letter-spacing: 3px;
+				font-family: 'Poppins', sans-serif;
+			}
+
+			.rs-fullvideo-cover {
+				background-color: rgba(0, 0, 0, 0.3) !important;
+			}
+
+			.tp-video-play-button {
+				display: none !important;
+			}
+
+			.tp-caption {
+				white-space: nowrap;
+			}
+
+			.tempClass {
+				display: none !important;
+			}
+
+			/* 业务范围图标居中 */
+			.fbox-effect .fbox-icon i {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			/* swiper */
+			.swiper-container {
+				width: 100%;
+				max-height: 11.25rem;
+				overflow: hidden;
+			}
+
+			#swiper2 {
+				direction: rtl;
+			}
+
+			.swiper-slide {
+				width: 100%;
+				height: 100%;
+				text-align: center;
+			}
+
+			.swiper-slide img {
+				width: 80%;
+				height: auto;
+				object-fit: cover;
+			}
+
+			/* Banner 输入框样式 */
+			#banner-phone-input {
+				/*border: 1px solid #ffffff !important;*/
+			}
+
+			.swiper-container .swiper-wrapper {
+				-webkit-transition-timing-function: linear;
+				/*之前是ease-out*/
+				-moz-transition-timing-function: linear;
+				-ms-transition-timing-function: linear;
+				-o-transition-timing-function: linear;
+				transition-timing-function: linear;
+			}
+
+			/* Banner 输入框样式 */
+			#banner-phone-input {
+				/*border: 1px solid #ffffff !important;*/
+			}
+
+			#banner-phone-input::placeholder {
+				/*color:  rgba(0, 0, 0, 0.4);*/
+			}
+
+			#banner-phone-input:focus {
+				/*border-color:   rgba(0, 0, 0, 0.4);*/
+				/*background:  rgba(0, 0, 0, 0.4);*/
+			}
+
+			/* Banner 按钮 hover 效果 */
+			.tp-caption button:hover {
+				background: rgba(255, 255, 255, 1) !important;
+				transform: translateY(-2px);
+				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+			}
+
+			#button-h:hover {
+				/*background: rgba(255, 255, 255, 0.24) !important;*/
+				/*backdrop-filter: blur(10px);*/
+				/*transform: none;*/
+				/*box-shadow: none;*/
+			}
+
+			#logo .jy-logo-group {
+				display: flex;
+				align-items: center;
+				gap: 22px;
+			}
+
+			#logo .jy-logo-link {
+				width: auto;
+				display: flex;
+				align-items: center;
+				flex: 0 0 auto;
+			}
+
+			#logo .jy-ai-service-entry {
+				position: relative;
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				gap: 8px;
+				width: auto;
+				margin-left: 8px;
+				padding: 9px 16px;
+				border-radius: 999px;
+				background: #0072ff;
+				box-shadow: 0 8px 22px -10px rgba(95, 178, 255, 0.8);
+				color: #fff !important;
+				font-size: 13px;
+				font-weight: 500;
+				line-height: 1;
+				text-decoration: none;
+				flex: 0 0 auto;
+				transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+			}
+
+			#logo .jy-ai-service-entry:hover {
+				background: #005ed6;
+				color: #fff !important;
+				transform: translateY(-1px);
+				box-shadow: 0 14px 28px -12px rgba(95, 178, 255, 0.9);
+			}
+
+			#logo .jy-ai-service-entry-icon {
+				width: 14px;
+				height: 14px;
+				display: inline-block;
+				flex: 0 0 auto;
+			}
+
+			#logo .jy-ai-service-entry-text {
+				display: block;
+				white-space: nowrap;
+				letter-spacing: 0.02em;
+			}
+
+			#logo .jy-ai-service-entry-badge {
+				position: absolute;
+				top: -7px;
+				right: -10px;
+				font-family: "JetBrains Mono", monospace;
+				font-size: 9px;
+				font-weight: 700;
+				letter-spacing: 0.12em;
+				color: #06112a;
+				background: #7df9c4;
+				padding: 3px 7px 2px;
+				border-radius: 999px;
+				box-shadow: 0 6px 14px -4px rgba(125, 249, 196, 0.6);
+				transform: rotate(6deg);
+				line-height: 1;
+			}
+
+			@media (max-width: 767.98px) {
+				#logo .jy-logo-group {
+					gap: 12px;
+				}
+
+				#logo .jy-ai-service-entry {
+					width: auto;
+					margin-left: 4px;
+					padding: 7px 12px;
+					gap: 6px;
+					font-size: 11.5px;
+				}
+
+				#logo .jy-ai-service-entry-icon {
+					width: 12px;
+					height: 12px;
+				}
+
+				#logo .jy-ai-service-entry-badge {
+					top: -6px;
+					right: -8px;
+					font-size: 8px;
+					padding: 2px 5px 1px;
+				}
+			}
+
+			#slider.slider-ba {
+				display: block;
+				min-height: 100vh;
+				background: transparent !important;
+			}
+
+			#slider.slider-ba,
+			#slider.slider-ba * {
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				font-kerning: normal;
+				font-synthesis: none;
+			}
+
+			.jy-neo-hero {
+				position: relative;
+				min-height: 100vh;
+				padding: calc(118px + env(safe-area-inset-top, 0px)) 0 calc(42px + env(safe-area-inset-bottom, 0px));
+				--jy-neo-font-stack: 'Sora', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+				font-family: var(--jy-neo-font-stack);
+				text-rendering: optimizeLegibility;
+				overflow: hidden;
+				color: #f1f5ff;
+				background: radial-gradient(1200px 700px at 78% -10%, rgba(95, 178, 255, 0.18), transparent 60%), radial-gradient(900px 700px at -10% 110%, rgba(42, 139, 255, 0.2), transparent 60%), linear-gradient(180deg, #020a22 0%, #040e28 45%, #010516 100%);
+				perspective: 1400px;
+				perspective-origin: 50% 60%;
+			}
+
+			.jy-neo-floor-wrap {
+				position: absolute;
+				left: 50%;
+				bottom: -10%;
+				width: 260vmax;
+				height: 130vmax;
+				transform: translateX(-50%) rotateX(68deg);
+				transform-origin: 50% 100%;
+				mask-image: linear-gradient(to top, #000 0%, #000 22%, transparent 55%);
+				-webkit-mask-image: linear-gradient(to top, #000 0%, #000 22%, transparent 55%);
+				z-index: 0;
+				opacity: 0.55;
+				overflow: hidden;
+			}
+
+			.jy-neo-floor {
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -80px;
+				bottom: 0;
+				background-image: linear-gradient(to right, transparent 0, rgba(95, 178, 255, 0.25) 0.6px, rgba(95, 178, 255, 0.25) 1.4px, transparent 2px), linear-gradient(to bottom, transparent 0, rgba(95, 178, 255, 0.22) 0.6px, rgba(95, 178, 255, 0.22) 1.4px, transparent 2px);
+				background-size: 80px 80px, 80px 80px;
+			}
+
+			.jy-neo-bg-orb {
+				position: absolute;
+				border-radius: 50%;
+				filter: blur(54px);
+				pointer-events: none;
+			}
+
+			.jy-neo-bg-orb.a {
+				width: 46vmax;
+				height: 46vmax;
+				left: -12vmax;
+				top: -14vmax;
+				background: radial-gradient(circle, rgba(42, 139, 255, 0.5) 0%, transparent 60%);
+				animation: jyNeoFloatA 18s ease-in-out infinite;
+			}
+
+			.jy-neo-bg-orb.b {
+				width: 38vmax;
+				height: 38vmax;
+				right: -10vmax;
+				top: 8vmax;
+				background: radial-gradient(circle, rgba(156, 123, 255, 0.4) 0%, transparent 60%);
+				animation: jyNeoFloatB 22s ease-in-out infinite;
+			}
+
+			.jy-neo-particles {
+				position: absolute;
+				inset: 0;
+				width: 100%;
+				height: 100%;
+				pointer-events: none;
+				opacity: 0.6;
+				z-index: 2;
+			}
+
+			.jy-neo-stage {
+				position: relative;
+				z-index: 5;
+			}
+
+			.jy-neo-copy,
+			.jy-neo-copy *,
+			.jy-neo-bottom,
+			.jy-neo-bottom * {
+				font-family: var(--jy-neo-font-stack) !important;
+				font-kerning: inherit;
+				font-synthesis: inherit;
+			}
+
+			.jy-neo-center {
+				width: 100%;
+				max-width: 1320px;
+				margin: 0 auto;
+				padding: 0 clamp(20px, 4vw, 56px);
+				display: grid;
+				grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
+				gap: 56px;
+				align-items: center;
+				min-height: calc(100vh - 210px);
+			}
+
+			.jy-neo-eyebrow {
+				display: inline-flex;
+				align-items: center;
+				gap: 10px;
+				padding: 6px 14px;
+				border: 1px solid rgba(95, 178, 255, 0.4);
+				border-radius: 999px;
+				font-size: 11px;
+				color: #5db1ff;
+				letter-spacing: 0.18em;
+				font-weight: 500;
+				background: rgba(42, 139, 255, 0.1);
+				backdrop-filter: blur(8px);
+			}
+
+			.jy-neo-eyebrow .dot {
+				width: 6px;
+				height: 6px;
+				border-radius: 50%;
+				background: #7df9c4;
+				box-shadow: 0 0 12px #7df9c4;
+				animation: jyNeoPulse 1.6s ease-in-out infinite;
+			}
+
+			.jy-neo-head {
+				margin: 22px 0 18px;
+				font-weight: 600;
+				font-size: clamp(38px, 5.6vw, 72px);
+				line-height: 1.18;
+				letter-spacing: -0.02em;
+				color: #f1f5ff;
+			}
+
+			.jy-neo-head .row {
+				display: block;
+				overflow: hidden;
+				padding: 0.08em 0;
+			}
+
+			.jy-neo-grad {
+				background: linear-gradient(120deg, #ffffff 0%, #d6e8ff 30%, #7fb6ff 65%, #2a8bff 100%);
+				-webkit-background-clip: text;
+				background-clip: text;
+				color: transparent;
+				background-size: 220% 100%;
+				animation: jyNeoGradShift 6s linear infinite;
+				font-weight: 800;
+			}
+
+			.jy-neo-ai-mark {
+				display: inline-block;
+				position: relative;
+				padding: 0 0.22em;
+				margin: 0 0.06em;
+				border-radius: 0.22em;
+				background: linear-gradient(135deg, #0072ff 0%, #2a8bff 50%, #4aa1ff 100%);
+				color: #fff;
+				font-weight: 900;
+				box-shadow: 0 14px 28px -10px rgba(0, 114, 255, 0.55), inset 0 -3px 0 rgba(0, 50, 150, 0.25);
+				transform: translateY(-0.04em) rotate(-2deg);
+				overflow: hidden;
+			}
+
+			.jy-neo-ai-mark::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: -60%;
+				width: 50%;
+				background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.55) 50%, transparent 70%);
+				transform: skewX(-20deg);
+				animation: jyNeoSheen 3.6s ease-in-out infinite;
+			}
+
+			.jy-neo-ai-mark-inner {
+				position: relative;
+				z-index: 1;
+			}
+
+			.jy-neo-rotor {
+				position: relative;
+				display: inline-block;
+				height: 1em;
+				line-height: 1;
+				overflow: hidden;
+				min-width: 5.8ch;
+			}
+
+			.jy-neo-rotor ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				animation: jyNeoRoll 12s steps(4) infinite;
+			}
+
+			.jy-neo-rotor li {
+				height: 1em;
+				line-height: 1;
+				color: #0072ff;
+				font-weight: 800;
+			}
+
+			.jy-neo-sub {
+				max-width: 540px;
+				color: #c7d3ec;
+				font-size: clamp(14px, 1.1vw, 15.5px);
+				line-height: 1.75;
+				font-family: 'Sora', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+			}
+
+			.jy-neo-sub em {
+				font-style: normal;
+				color: #f1f5ff;
+				font-weight: 500;
+			}
+
+			.jy-neo-lead {
+				margin-top: 26px;
+				display: flex;
+				align-items: stretch;
+				max-width: 520px;
+				padding: 6px;
+				border: 1px solid rgba(165, 195, 255, 0.22);
+				border-radius: 14px;
+				background: rgba(255, 255, 255, 0.07);
+				box-shadow: 0 18px 50px -24px rgba(0, 30, 90, 0.6);
+				backdrop-filter: blur(8px);
+			}
+
+			.jy-neo-lead:focus-within {
+				border-color: #5db1ff;
+				background: rgba(255, 255, 255, 0.1);
+				box-shadow: 0 0 0 4px rgba(95, 178, 255, 0.15), 0 18px 50px -24px rgba(0, 30, 90, 0.6);
+			}
+
+			.jy-neo-lead .leadicon {
+				display: grid;
+				place-items: center;
+				padding: 0 10px 0 14px;
+				color: #5db1ff;
+			}
+
+			.jy-neo-lead input {
+				flex: 1;
+				min-width: 0;
+				border: 0;
+				outline: 0;
+				background: transparent;
+				font: 500 15px/1 'Sora', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+				color: #f1f5ff;
+				padding: 14px 8px;
+			}
+
+			.jy-neo-lead input::placeholder {
+				color: #7d8fb7;
+				font-weight: 400;
+			}
+
+			.jy-neo-lead button {
+				flex: none;
+				display: inline-flex;
+				align-items: center;
+				gap: 8px;
+				padding: 0 22px;
+				border-radius: 10px;
+				border: 0;
+				cursor: pointer;
+				background: #0072ff;
+				color: #fff;
+				font: 600 14px/1 'Sora', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+				transition: 0.25s;
+			}
+
+			.jy-neo-lead button:hover {
+				background: #005ed6;
+				transform: translateY(-1px);
+				box-shadow: 0 12px 26px -10px rgba(95, 178, 255, 0.6);
+			}
+
+			.jy-neo-lead button .arrow {
+				transition: transform 0.25s;
+			}
+
+			.jy-neo-lead button:hover .arrow {
+				transform: translateX(3px);
+			}
+
+			.jy-neo-meta {
+				margin-top: 30px;
+				display: flex;
+				gap: 34px;
+				flex-wrap: wrap;
+			}
+
+			.jy-neo-meta .cell {
+				display: flex;
+				flex-direction: column;
+				gap: 4px;
+			}
+
+			.jy-neo-meta b {
+				font-size: 22px;
+				font-weight: 600;
+				color: #f1f5ff;
+				font-family: 'Sora', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+			}
+
+			.jy-neo-meta b em {
+				font-style: normal;
+				color: #5db1ff;
+			}
+
+			.jy-neo-meta span {
+				font-size: 11px;
+				color: #7d8fb7;
+				letter-spacing: 0.12em;
+				font-family: 'Sora', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+			}
+
+			.jy-neo-biz {
+				position: relative;
+				width: 100%;
+				max-width: 560px;
+				justify-self: end;
+				aspect-ratio: 1 / 1.05;
+				perspective: 1200px;
+			}
+
+			.jy-neo-biz-grid {
+				position: absolute;
+				inset: 0;
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-rows: repeat(3, 1fr);
+				gap: 14px;
+				transform: rotateX(8deg) rotateY(-14deg);
+				transform-style: preserve-3d;
+			}
+
+			.jy-neo-card {
+				position: relative;
+				padding: 18px 16px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				border: 1px solid rgba(165, 195, 255, 0.22);
+				border-radius: 18px;
+				background: linear-gradient(160deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
+				backdrop-filter: blur(8px);
+				color: #f1f5ff;
+				transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.4s, border-color 0.3s, background 0.3s;
+				box-shadow: 0 12px 30px -16px rgba(0, 30, 90, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+				overflow: hidden;
+			}
+
+			.jy-neo-card::before {
+				content: '';
+				position: absolute;
+				inset: 0;
+				border-radius: inherit;
+				pointer-events: none;
+				background: radial-gradient(120% 80% at 0% 0%, rgba(95, 178, 255, 0.18), transparent 60%);
+			}
+
+			.jy-neo-card::after {
+				content: '';
+				position: absolute;
+				left: -30%;
+				top: -30%;
+				width: 60%;
+				height: 60%;
+				background: radial-gradient(closest-side, rgba(255, 255, 255, 0.18), transparent 70%);
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+
+			.jy-neo-card:hover {
+				transform: translateZ(40px) scale(1.04);
+				border-color: rgba(95, 178, 255, 0.5);
+				background: linear-gradient(160deg, rgba(95, 178, 255, 0.18), rgba(255, 255, 255, 0.06));
+				box-shadow: 0 24px 60px -20px rgba(95, 178, 255, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+				z-index: 4;
+			}
+
+			.jy-neo-card:hover::after {
+				opacity: 1;
+			}
+
+			.jy-neo-card.hero-card {
+				grid-column: 1 / span 2;
+				grid-row: 1 / span 2;
+				padding: 22px;
+			}
+
+			.jy-neo-card.c-r1 { grid-column: 3; grid-row: 1; }
+			.jy-neo-card.c-r2 { grid-column: 3; grid-row: 2; }
+			.jy-neo-card.c-b1 { grid-column: 1; grid-row: 3; }
+			.jy-neo-card.c-b2 { grid-column: 2; grid-row: 3; }
+			.jy-neo-card.c-b3 { grid-column: 3; grid-row: 3; }
+
+			.jy-neo-card .ico {
+				width: 42px;
+				height: 42px;
+				border-radius: 12px;
+				display: grid;
+				place-items: center;
+				color: #fff;
+				background: linear-gradient(140deg, #0072ff, #5db1ff);
+				box-shadow: 0 8px 22px -8px rgba(95, 178, 255, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+			}
+
+			.jy-neo-card.hero-card .ico {
+				width: 54px;
+				height: 54px;
+				border-radius: 14px;
+				background: linear-gradient(140deg, #9c7bff, #2a8bff 60%, #5db1ff);
+			}
+
+			.jy-neo-card h3 {
+				margin-top: 14px;
+				font-size: 15px;
+				font-weight: 600;
+				letter-spacing: 0.01em;
+				color: #f1f5ff;
+			}
+
+			.jy-neo-card.hero-card h3 {
+				font-size: 22px;
+				line-height: 1.25;
+				margin-top: 18px;
+			}
+
+			.jy-neo-card p {
+				margin-top: 6px;
+				font-size: 11.5px;
+				line-height: 1.55;
+				color: #7d8fb7;
+			}
+
+			.jy-neo-card.hero-card p {
+				font-size: 13px;
+				line-height: 1.6;
+				color: #c7d3ec;
+				max-width: 90%;
+			}
+
+			.jy-neo-card .badge {
+				position: absolute;
+				top: 14px;
+				right: 14px;
+				font-size: 9.5px;
+				letter-spacing: 0.18em;
+				color: #5db1ff;
+				opacity: 0.85;
+			}
+
+			.jy-neo-bottom {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: calc(18px + env(safe-area-inset-bottom, 0px));
+				z-index: 6;
+				font-size: 11px;
+				color: #7d8fb7;
+				letter-spacing: 0.16em;
+				padding: 0 clamp(20px, 4vw, 56px);
+				font-family: 'Sora', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+			}
+
+			.jy-neo-ticker {
+				display: flex;
+				align-items: center;
+				overflow: hidden;
+				width: 100%;
+				mask-image: linear-gradient(to right, transparent 0, #000 5%, #000 95%, transparent 100%);
+				-webkit-mask-image: linear-gradient(to right, transparent 0, #000 5%, #000 95%, transparent 100%);
+			}
+
+			.jy-neo-track {
+				display: flex;
+				gap: 42px;
+				white-space: nowrap;
+				animation: jyNeoSlide 42s linear infinite;
+				padding-left: 42px;
+				font-family: 'Sora', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+			}
+
+			.jy-neo-track em {
+				font-style: normal;
+				color: #f1f5ff;
+				font-weight: 500;
+			}
+
+			@keyframes jyNeoFloatA { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(4vmax, 3vmax); } }
+			@keyframes jyNeoFloatB { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-3vmax, 5vmax); } }
+			@keyframes jyNeoPulse { 0%, 100% { opacity: 0.4; transform: scale(0.85); } 50% { opacity: 1; transform: scale(1.1); } }
+			@keyframes jyNeoGradShift { 0% { background-position: 0 0; } 100% { background-position: 200% 0; } }
+			@keyframes jyNeoSheen { 0% { left: -60%; } 55% { left: 130%; } 100% { left: 130%; } }
+			@keyframes jyNeoRoll { 0%, 22% { transform: translateY(0); } 25%, 47% { transform: translateY(-1em); } 50%, 72% { transform: translateY(-2em); } 75%, 97% { transform: translateY(-3em); } 100% { transform: translateY(-4em); } }
+			@keyframes jyNeoSlide { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+			@media (max-width: 1100px) {
+				.jy-neo-center {
+					gap: 32px;
+				}
+
+				.jy-neo-biz {
+					max-width: 480px;
+				}
+			}
+
+			@media (max-width: 980px) {
+				#slider.slider-ba {
+					min-height: auto;
+				}
+
+				.jy-neo-hero {
+					min-height: auto;
+					padding-top: calc(104px + env(safe-area-inset-top, 0px));
+				}
+
+				.jy-neo-bottom {
+					position: relative;
+					left: auto;
+					right: auto;
+					bottom: auto;
+					margin-top: 24px;
+				}
+
+				.jy-neo-center {
+					grid-template-columns: 1fr;
+					gap: 24px;
+					min-height: auto;
+				}
+
+				.jy-neo-biz {
+					max-width: 520px;
+					justify-self: center;
+					order: -1;
+					margin-top: 20px;
+					aspect-ratio: auto;
+				}
+
+				.jy-neo-biz-grid {
+					position: relative;
+					transform: rotateX(4deg) rotateY(-6deg);
+				}
+			}
+
+			@media (max-width: 760px) {
+				.jy-neo-floor-wrap,
+				.jy-neo-particles {
+					display: none;
+				}
+
+				.jy-neo-bg-orb {
+					filter: blur(40px);
+				}
+
+				.jy-neo-head {
+					margin: 18px 0 14px;
+					font-size: clamp(32px, 9vw, 46px);
+					line-height: 1.08;
+				}
+
+				.jy-neo-biz-grid {
+					grid-template-columns: 1fr 1fr;
+					grid-template-rows: repeat(4, auto);
+					gap: 10px;
+					transform: none;
+				}
+
+				.jy-neo-card.hero-card { grid-column: 1 / span 2; grid-row: 1; }
+				.jy-neo-card.c-r1 { grid-column: 1; grid-row: 2; }
+				.jy-neo-card.c-r2 { grid-column: 2; grid-row: 2; }
+				.jy-neo-card.c-b1 { grid-column: 1; grid-row: 3; }
+				.jy-neo-card.c-b2 { grid-column: 2; grid-row: 3; }
+				.jy-neo-card.c-b3 { grid-column: 1 / span 2; grid-row: 4; }
+
+				.jy-neo-card {
+					padding: 14px;
+				}
+
+				.jy-neo-card.hero-card {
+					padding: 18px;
+				}
+
+				.jy-neo-card h3 {
+					font-size: 14px;
+				}
+
+				.jy-neo-card.hero-card h3 {
+					font-size: 18px;
+				}
+
+				.jy-neo-card p {
+					font-size: 11px;
+				}
+
+				.jy-neo-card.hero-card p {
+					font-size: 12.5px;
+				}
+
+				.jy-neo-lead {
+					flex-direction: column;
+					gap: 8px;
+				}
+
+				.jy-neo-lead .leadicon {
+					display: none;
+				}
+
+				.jy-neo-lead input {
+					font-size: 14px;
+					padding: 13px 10px;
+				}
+
+				.jy-neo-lead button {
+					justify-content: center;
+					padding: 14px 16px;
+					font-size: 13px;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.jy-neo-hero {
+					padding-top: calc(92px + env(safe-area-inset-top, 0px));
+					padding-bottom: calc(28px + env(safe-area-inset-bottom, 0px));
+				}
+
+				.jy-neo-eyebrow {
+					font-size: 10px;
+					padding: 5px 12px;
+				}
+
+				.jy-neo-sub {
+					font-size: 13px;
+				}
+
+				.jy-neo-meta {
+					margin-top: 22px;
+					gap: 14px;
+				}
+
+				.jy-neo-meta b {
+					font-size: 16px;
+				}
+			}
+
+			@media (prefers-reduced-motion: reduce) {
+				.jy-neo-hero *,
+				.jy-neo-hero *::before,
+				.jy-neo-hero *::after {
+					animation-duration: 0.001s !important;
+					animation-iteration-count: 1 !important;
+					transition: none !important;
+				}
+			}
+
+			#header.force-white-header {
+				--cnvs-header-bg: #ffffff;
+				--cnvs-header-sticky-bg: #ffffff;
+				--cnvs-header-border-color: rgba(0, 0, 0, 0.08);
+				--cnvs-header-transparent-border-color: rgba(0, 0, 0, 0.08);
+			}
+
+			#header.force-white-header #header-wrap {
+				background-color: #ffffff !important;
+				border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+			}
+ 		</style>
+ 		<!-- 注意：禁用 requestAnimationFrame 可能导致动画问题，建议移除或使用节流方案 -->
+ 		<!-- <script>window.requestAnimationFrame = () => {};</script> -->
+ 		<!-- 清空 sessionStorage 保存的页码与类型信息 -->
+ 		<script>
+			window.sessionStorage.removeItem('savePageNo');
+			window.sessionStorage.removeItem('saveTypeId');
+		</script>
+		<!-- 接入百度商桥 -->
+		<script src="jy-js/baidu-qiao.js" type="text/javascript" defer="defer"></script>
+	</head>
+
+	<body id="jy-stretched" class="stretched">
+		<!-- 加载条 -->
+		<div class="page-loading">
+			<div class="pic"></div>
+		</div>
+
+		<!-- 初始透明，通过JS或超时回退显示 -->
+		<div id="wrapper" style="opacity: 0">
+		<script>
+			(function () {
+				var finished = false;
+				window.__finishPageLoading = function () {
+					if (finished) return;
+					finished = true;
+					var wrapper = document.getElementById('wrapper');
+					var loading = document.querySelector('.page-loading');
+					var loadingPic = document.querySelector('.page-loading .pic');
+					if (loadingPic) {
+						loadingPic.style.width = '100%';
+						loadingPic.style.opacity = '0';
+					}
+					if (wrapper) wrapper.style.opacity = '1';
+					setTimeout(function () {
+						if (loading) loading.style.display = 'none';
+					}, 200);
+					if (window.__loadingTimeout) {
+						clearTimeout(window.__loadingTimeout);
+						window.__loadingTimeout = null;
+					}
+				};
+				window.__loadingTimeout = setTimeout(window.__finishPageLoading, 2500);
+			})();
+		</script>
+			<!-- Header -->
+			<header id="header" class="dark full-header transparent-header" data-sticky-class="not-dark">
+				<div id="header-wrap">
+					<div class="container">
+						<div class="header-row">
+							<!-- Logo -->
+							<div id="logo">
+								<div class="jy-logo-group">
+									<a class="jy-logo-link" href="index.html">
+										<img style="width: clamp(7rem, 28vw, 15rem); height: auto; padding: 1rem 0" class="logo-default" srcset="image-jy/jy_nav_dark_logo.png" src="image-jy/jy_nav_dark_logo.png" alt="Logo" />
+										<img style="width: clamp(7rem, 28vw, 15rem); height: auto; padding: 1rem 0" class="logo-dark" srcset="image-jy/jy_nav_logo.png" src="image-jy/jy_nav_logo.png" alt="Logo" />
+									</a>
+									<a class="jy-ai-service-entry" href="https://www.9shadow.com/EnterpriseAI/" target="_blank" rel="noopener noreferrer" aria-label="查看 AI 服务">
+										<svg class="jy-ai-service-entry-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+											<path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8L12 2z"></path>
+											<path d="M19 14l.9 2.1L22 17l-2.1.9L19 20l-.9-2.1L16 17l2.1-.9L19 14z"></path>
+										</svg>
+										<span class="jy-ai-service-entry-text">AI 服务</span>
+										<span class="jy-ai-service-entry-badge">NEW</span>
+									</a>
+								</div>
+							</div>
+							<!-- 移动端菜单展开按钮 -->
+							<div class="primary-menu-trigger">
+								<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+									<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+								</button>
+							</div>
+
+							<nav class="primary-menu">
+								<ul class="menu-container" id="jy-header-menu" style="border-right: none"></ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<!-- 勿删，动画效果 -->
+				<div class="header-wrap-clone"></div>
+			</header>
+
+			<!-- banner 旧的  -->
+<!--			<section id="slider" class="slider-element revslider-wrap slider-parallax min-vh-100 include-header" style="background-color: #fff">-->
+<!--				<div class="slider-inner">-->
+<!--					<div id="rev_slider_579_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="default-slider" style="padding: 0px">-->
+<!--						<div id="rev_slider_579_1" class="rev_slider fullscreenbanner" data-version="5.1.4">-->
+<!--							<ul>-->
+<!--								<li class="dark" data-slotamount="1" data-masterspeed="0" data-thumb="image-jy/video/banner.png" data-saveperformance="off" data-title="互联网技术服务">-->
+<!--									&lt;!&ndash; MAIN IMAGE &ndash;&gt;-->
+<!--									&lt;!&ndash; <img src="image-jy/video/banner.png" alt="Image" data-bgposition="center center"-->
+<!--                                    data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10"-->
+<!--                                    class="rev-slidebg" data-no-retina> &ndash;&gt;-->
+<!--									&lt;!&ndash; LAYERS &ndash;&gt;-->
+
+<!--									&lt;!&ndash; LAYER NR. 1 &ndash;&gt;-->
+<!--									<div class="tp-fade fullscreenvideo rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="https://9shadow.oss-cn-shanghai.aliyuncs.com/banner.mp4" data-videopreload="preload" data-videoloop="none" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true"></div>-->
+
+<!--									&lt;!&ndash; LAYER NR. 2 &ndash;&gt;-->
+<!--									&lt;!&ndash; <div class="tp-caption ltl tp-resizeme revo-slider-caps-text text-uppercase"-->
+<!--									data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"-->
+<!--									data-y="['middle','middle','middle','middle']"-->
+<!--									data-voffset="['-55','-55','-90','-90']"-->
+<!--									data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"-->
+<!--									data-speed="800" data-start="1000" data-easing="easeOutQuad" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-textAlign="center" data-endeasing="Power4.easeIn"-->
+<!--									style="z-index: 3; white-space: nowrap; letter-spacing: 2px">为行业数字化注入全新价值</div> &ndash;&gt;-->
+
+<!--									&lt;!&ndash; <div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text p-0 border-0"-->
+<!--									data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"-->
+<!--									data-y="['middle','middle','middle','middle']" data-voffset="['0','0','-10','-10']"-->
+<!--									data-fontsize="['50','50','50','36']" data-lineheight="['50','50','60','50']"-->
+<!--									data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"-->
+<!--									data-speed="800" data-start="1200" data-easing="easeOutQuad" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-textAlign="center" data-width="['800','800','560','400']"-->
+<!--									data-height="none" data-whitespace="['normal','nowrap','normal','normal']"-->
+<!--									data-endeasing="Power4.easeIn"-->
+<!--									style="z-index: 3; white-space: normal; letter-spacing: 5px">互联网技术服务专业提供商</div> &ndash;&gt;-->
+<!--									&lt;!&ndash; data-voffset="['0','0','-10','-10']" &ndash;&gt;-->
+<!--									<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text p-0 border-0" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-40','-40','-50','-50']" data-fontsize="['50','50','50','36']" data-lineheight="['50','50','60','50']" data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;" data-speed="800" data-start="1200" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-textAlign="center" data-width="['auto','auto','auto','auto']" data-height="none" data-whitespace="['nowrap','nowrap','nowrap','nowrap']" data-endeasing="Power4.easeIn" style="z-index: 3; white-space: nowrap; letter-spacing: 5px">10余年深耕，聚焦数智化定制解决方案</div>-->
+
+<!--									&lt;!&ndash; <div class="tp-caption ltl tp-resizeme revo-slider-desc-text"-->
+<!--									data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"-->
+<!--									data-y="['middle','middle','middle','middle']" data-voffset="['80','80',100,'130']"-->
+<!--									data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"-->
+<!--									data-speed="800" data-start="1400" data-easing="easeOutQuad" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-textAlign="center" data-width="['800','800','560','400']"-->
+<!--									data-height="none" data-endeasing="Power4.easeIn"-->
+<!--									style="z-index: 3; width: 750px; max-width: 750px; white-space: normal">-->
+<!--									公司致力于用数字化手段，摆脱发展困境，提升企业核心竞争力</div> &ndash;&gt;-->
+<!--									&lt;!&ndash; data-voffset="['80','80',100,'130']" &ndash;&gt;-->
+<!--									<div class="tp-caption ltl tp-resizeme revo-slider-desc-text" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['40','40','60','90']" data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;" data-speed="800" data-start="1400" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-textAlign="center" data-width="['800','800','560','400']" data-height="none" data-endeasing="Power4.easeIn" style="z-index: 3; width: 750px; max-width: 750px; white-space: normal; padding-top: 16px; padding-bottom: 16px">覆盖传统软件系统开发、小程序APP开发、电商开发、品牌营销、数字孪生、品牌官网等按需定制专属解决方案</div>-->
+
+<!--									<div class="tp-caption ltl tp-resizeme" id="fangan" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['130','130','170','170']" data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;" data-speed="800" data-start="1550" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 3; white-space: nowrap; display: flex; align-items: center; gap: 0">-->
+<!--										<input type="text" id="banner-phone-input" placeholder="请填写您的手机号" style="height: 54px; padding: 0 20px; border: 1px solid #ffffff; background: transparent; color: #ffffff; font-size: 16px; outline: none; border-radius: 4px 0 0 4px; width: 280px" />-->
+<!--										<button id="button-h" onclick="submitBannerPhone()" style="height: 54px; padding: 0 14px; background: rgba(255, 255, 255, 0.24); color: #ffffff; font-size: 16px; font-weight: 600; border: 1px solid #ffffff; border-left: none; cursor: pointer; border-radius: 0 4px 4px 0; white-space: nowrap">免费获取方案</button>-->
+<!--									</div>-->
+
+<!--									&lt;!&ndash; <div class="tp-caption ltl tp-resizeme" data-x="['center','center','center','center']"-->
+<!--									data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']"-->
+<!--									data-voffset="['170','170','210','210']"-->
+<!--									data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;e:Power4.easeOutQuad;"-->
+<!--									data-speed="800" data-start="1550" data-easing="easeOutQuad" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-endeasing="Power4.easeIn"-->
+<!--									style="z-index: 3; white-space: nowrap">-->
+<!--									<a target="_blank"-->
+<!--										href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989"-->
+<!--										class="jy-button button button-rounded button-large button-border button-white button-light button-reveal text-end m-0"><i-->
+<!--											class="bi-arrow-right"></i><span>立刻进入</span></a>-->
+<!--								</div> &ndash;&gt;-->
+<!--								</li>-->
+
+<!--								&lt;!&ndash; <li class="dark" data-transition="slideup" data-slotamount="1" data-masterspeed="1000"-->
+<!--								data-thumb="images/slider/rev/main/s2-thumb.jpg" data-fstransition="fade"-->
+<!--								data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off"-->
+<!--								data-title="梦想定制工场">-->
+<!--								MAIN IMAGE-->
+<!--								<img src="images/slider/rev/main/s2-bg.jpg" alt="video_woman_cover3"-->
+<!--									data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" />-->
+<!--								LAYERS-->
+<!--								LAYER NR. 2-->
+<!--								<div class="tp-caption ltl tp-resizeme rs-parallaxlevel-8" data-x="200" data-y="107"-->
+<!--									data-transform_in="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;s:700;e:Power4.easeOutQuad;"-->
+<!--									data-speed="700" data-start="2600" data-easing="easeOutCubic" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-endeasing="Power4.easeIn"-->
+<!--									style="z-index: 3; white-space: nowrap">-->
+<!--									<img src="images/slider/rev/main/s2-1.png" alt="Image" />-->
+<!--								</div>-->
+
+<!--								<div class="tp-caption ltl tp-resizeme rs-parallaxlevel-7" data-x="200" data-y="107"-->
+<!--									data-transform_in="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;s:700;e:Power4.easeOutQuad;"-->
+<!--									data-speed="700" data-start="2800" data-easing="easeOutCubic" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 4">-->
+<!--									<img src="images/slider/rev/main/s2-2.png" alt="Image" />-->
+<!--								</div>-->
+
+<!--								<div class="tp-caption ltl tp-resizeme rs-parallaxlevel-6" data-x="200" data-y="107"-->
+<!--									data-transform_in="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;s:700;e:Power4.easeOutCubic;"-->
+<!--									data-speed="700" data-start="3000" data-easing="easeOutCubic" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 5">-->
+<!--									<img src="images/slider/rev/main/s2-3.png" alt="Image" />-->
+<!--								</div>-->
+
+<!--								<div class="tp-caption ltl tp-resizeme rs-parallaxlevel-5" data-x="200" data-y="107"-->
+<!--									data-transform_in="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;s:700;e:Power4.easeOutCubic;"-->
+<!--									data-speed="700" data-start="3200" data-easing="easeOutCubic" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 6">-->
+<!--									<img src="images/slider/rev/main/s2-4.png" alt="Image" />-->
+<!--								</div>-->
+
+<!--								<div class="tp-caption ltl tp-resizeme rs-parallaxlevel-4" data-x="200" data-y="107"-->
+<!--									data-transform_in="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;s:700;e:Power4.easeOutCubic;"-->
+<!--									data-speed="700" data-start="3400" data-easing="easeOutCubic" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 7">-->
+<!--									<img src="images/slider/rev/main/s2-5.png" alt="Image" />-->
+<!--								</div>-->
+
+<!--								<div class="tp-caption ltl tp-resizeme rs-parallaxlevel-3" data-x="200" data-y="107"-->
+<!--									data-transform_in="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;s:700;e:Power4.easeOutCubic;"-->
+<!--									data-speed="700" data-start="3600" data-easing="easeOutCubic" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 8">-->
+<!--									<img src="images/slider/rev/main/s2-6.png" alt="Image" />-->
+<!--								</div>-->
+
+<!--								<div class="tp-caption ltl tp-resizeme rs-parallaxlevel-2" data-x="200" data-y="107"-->
+<!--									data-transform_in="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;s:700;e:Power4.easeOutCubic;"-->
+<!--									data-speed="700" data-start="3800" data-easing="easeOutCubic" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 9">-->
+<!--									<img src="images/slider/rev/main/s2-7.png" alt="Image" />-->
+<!--								</div>-->
+
+<!--								<div class="tp-caption ltl tp-resizeme rs-parallaxlevel-1" data-x="200" data-y="107"-->
+<!--									data-transform_in="x:0;y:-250;z:0;rotationZ:0;scaleX:0.5;scaleY:0.5;skewX:0;skewY:0;s:700;e:Power4.easeOutCubic;"-->
+<!--									data-speed="700" data-start="4000" data-easing="easeOutCubic" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 10">-->
+<!--									<img src="images/slider/rev/main/s2-8.png" alt="Image" />-->
+<!--								</div>-->
+
+<!--								<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text p-0 border-0 text-uppercase"-->
+<!--									data-x="37" data-y="140"-->
+<!--									data-transform_in="x:5;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:5;skewY:0;opacity:0;s:800;transformPerspective:200;transformOrigin:50% 0%;"-->
+<!--									data-speed="800" data-start="1400" data-easing="easeOutQuad" data-splitin="chars"-->
+<!--									data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-width="['800','800','560','380']" data-height="none"-->
+<!--									data-endeasing="Power4.easeIn"-->
+<!--									style="z-index: 11; font-size: 56px; white-space: nowrap; letter-spacing: 5px">-->
+<!--									梦想定制工场</div>-->
+
+<!--								<div class="tp-caption ltl tp-resizeme revo-slider-desc-text text-start" data-x="40"-->
+<!--									data-y="240"-->
+<!--									data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;s:800;transformPerspective:200;transformOrigin:50% 0%;"-->
+<!--									data-speed="800" data-start="1600" data-easing="easeOutQuad" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-width="['550','550','550','380']" data-height="none"-->
+<!--									data-endeasing="Power4.easeIn"-->
+<!--									style="z-index: 11; max-width: 550px; white-space: normal">全平台、全类型 高端定制</div>-->
+
+<!--								<div class="tp-caption ltl tp-resizeme" data-x="40" data-y="350"-->
+<!--									data-transform_in="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"-->
+<!--									data-speed="800" data-start="1800" data-easing="easeOutQuad" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1300" data-endeasing="Power4.easeIn" style="z-index: 11">-->
+<!--									<a href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989"-->
+<!--										target="_blank"-->
+<!--										class="jy-button button button-rounded button-large button-border button-white button-light button-reveal text-end m-0"><i-->
+<!--											class="bi-arrow-right"></i><span>立刻进入</span></a>-->
+<!--								</div>-->
+<!--							</li> &ndash;&gt;-->
+<!--							<li data-transition="slideup" data-slotamount="1" data-masterspeed="1500"-->
+<!--								data-thumb="image-jy/index/slide/s3.jpg" data-delay="10000" data-saveperformance="off"-->
+<!--								data-title="务实专注卓越">-->
+<!--								MAIN IMAGE-->
+<!--								<img src="image-jy/index/slide/s3.jpg" alt="kenburns6" data-bgposition="left top"-->
+<!--									data-kenburns="on" data-duration="10000" data-ease="Linear.easeNone"-->
+<!--									data-scalestart="130" data-scaleend="100" data-bgpositionend="right bottom" />-->
+<!--								LAYERS-->
+
+<!--								LAYER NR. 2-->
+<!--								<div class="tp-caption ltl tp-resizeme revo-slider-caps-text text-uppercase" data-x="40"-->
+<!--									data-y="150"-->
+<!--									data-transform_in="x:-200;y:0;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;s:800;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"-->
+<!--									data-speed="800" data-start="1500" data-easing="easeOutQuad" data-splitin="none"-->
+<!--									data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-endeasing="Power4.easeIn"-->
+<!--									style="z-index: 3; white-space: nowrap; color: #222;">Bootstrap 3+ Compatible</div>-->
+
+<!--								<div class="tp-caption ltl tp-resizeme revo-slider-emphasis-text p-0 border-0"-->
+<!--									data-x="37" data-y="180"-->
+<!--									data-transform_in="x:10;y:0;z:0;rotationY:120;rotationZ:0;scaleX:0.8;scaleY:0.8;skewX:0;s:600;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 50%;"-->
+<!--									data-speed="600" data-start="1700" data-easing="easeOutCubic" data-splitin="chars"-->
+<!--									data-splitout="none" data-elementdelay="0.1" data-endelementdelay="0.1"-->
+<!--									data-endspeed="1000" data-endeasing="Power4.easeIn"-->
+<!--									style="z-index: 3; white-space: nowrap; color: #222; line-height: 1.2; max-width: 450px; width: 450px; white-space: normal; letter-spacing: 10px">-->
+<!--									<div style="transform: translateX(-4.7rem)">务实</div>-->
+<!--									<div>专注</div>-->
+<!--									<div style="transform: translateX(4.7rem)">卓越</div>-->
+<!--								</div>-->
+<!--							</li> &ndash;&gt;-->
+<!--							</ul>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</section>-->
+            <!--      新的banner        -->
+            <section id="slider" class="slider-ba slider-element revslider-wrap slider-parallax min-vh-100 include-header" style="background-color: #fff">
+				<div class="jy-neo-hero">
+					<div class="jy-neo-floor-wrap" aria-hidden="true"><div class="jy-neo-floor"></div></div>
+					<div class="jy-neo-bg-orb a"></div>
+					<div class="jy-neo-bg-orb b"></div>
+					<canvas class="jy-neo-particles" id="neo-pc"></canvas>
+					<div class="jy-neo-stage">
+						<style>
+							@media (max-width: 576px) {
+								.jy-neo-stage .jy-neo-center { display: flex; flex-direction: column; }
+								.jy-neo-stage .jy-neo-center > .jy-neo-copy { order: 1; }
+								.jy-neo-stage .jy-neo-center > .jy-neo-biz { order: 2; }
+							}
+						</style>
+						<div class="jy-neo-center">
+							<div class="jy-neo-copy">
+								<div class="jy-neo-eyebrow"><span class="dot"></span><span>AI · INTERACTIVE · MARKETING · SYSTEMS</span></div>
+								<h1 class="jy-neo-head">
+									<span class="row"><span class="word">让&nbsp;<span class="jy-neo-ai-mark"><span class="jy-neo-ai-mark-inner">AI</span></span>&nbsp;走进</span></span>
+									<span class="row"><span class="word"><span class="jy-neo-grad">每一次数字化</span></span></span>
+									<span class="row"><span class="word"><span class="jy-neo-rotor"><ul><li>体验。</li><li>交互。</li><li>营销。</li><li>决策。</li><li>体验。</li></ul></span></span></span>
+								</h1>
+								<p class="jy-neo-sub">九影网络是一家以&nbsp;<em>AI 大模型</em>&nbsp;为引擎的数字化解决方案服务商。聚焦智能体应用、互动营销、虚拟仿真、元宇宙 / AR·VR、3D 云展厅、小程序与&nbsp;App、政企信息化系统，为品牌与产业打造可量产的智能体验。</p>
+								<div class="jy-neo-lead" id="leadForm">
+									<span class="leadicon" aria-hidden="true">
+										<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+									</span>
+									<input type="tel" id="banner-phone-input" inputmode="numeric" autocomplete="tel" maxlength="11" placeholder="留下手机号，AI 顾问 24h 内回电" oninput="this.value = this.value.replace(/\D/g, '').slice(0, 11)" />
+									<button id="button-h" type="button" onclick="submitBannerPhone()"><span>免费咨询</span><span class="arrow">→</span></button>
+								</div>
+								<div class="jy-neo-meta">
+									<div class="cell"><b><em>10</em>+</b><span>YEARS&nbsp;·&nbsp;经验沉淀</span></div>
+									<div class="cell"><b><em>500</em>+</b><span>PROJECTS&nbsp;·&nbsp;落地案例</span></div>
+									<div class="cell"><b><em>50</em>+</b><span>AI&nbsp;AGENTS&nbsp;·&nbsp;自研智能体</span></div>
+								</div>
+							</div>
+							<div class="jy-neo-biz" aria-label="核心业务">
+								<div class="jy-neo-biz-grid">
+									<article class="jy-neo-card hero-card">
+										<span class="badge">01 · CORE</span>
+										<div class="ico" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v3"/><path d="M12 19v3"/><path d="M4.93 4.93l2.12 2.12"/><path d="M16.95 16.95l2.12 2.12"/><path d="M2 12h3"/><path d="M19 12h3"/><path d="M4.93 19.07l2.12-2.12"/><path d="M16.95 7.05l2.12-2.12"/><circle cx="12" cy="12" r="4"/></svg></div>
+										<div><h3>AI 大模型应用<br />智能体 &amp; 知识引擎</h3><p>定制行业 AI Agent / RAG 知识库 / AIGC 生产线，让大模型直接接入业务流程，降本提效。</p></div>
+									</article>
+									<article class="jy-neo-card c-r1">
+										<span class="badge">02</span>
+										<div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>
+										<div><h3>政企信息化</h3><p>SaaS 系统 / 数据中台 / OA</p></div>
+									</article>
+									<article class="jy-neo-card c-r2">
+										<span class="badge">03</span>
+										<div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M11 18h2"/></svg></div>
+										<div><h3>小程序 / App</h3><p>微信、抖音、原生 App</p></div>
+									</article>
+									<article class="jy-neo-card c-b1">
+										<span class="badge">04</span>
+										<div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+										<div><h3>虚拟仿真</h3><p>数字孪生 / 三维展示</p></div>
+									</article>
+									<article class="jy-neo-card c-b2">
+										<span class="badge">05</span>
+										<div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 010 18"/><path d="M12 3a14 14 0 000 18"/></svg></div>
+										<div><h3>元宇宙 / XR / 云展厅</h3><p>AR · VR · 沉浸体验</p></div>
+									</article>
+									<article class="jy-neo-card c-b3">
+										<span class="badge">06</span>
+										<div class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c4-8 14-8 18 0"/><path d="M3 12c4 8 14 8 18 0"/><circle cx="12" cy="12" r="2.5"/></svg></div>
+										<div><h3>互动营销 H5</h3><p>品牌活动 / 裂变玩法</p></div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="jy-neo-bottom">
+						<div class="jy-neo-ticker">
+							<div class="jy-neo-track">
+								<span><em>AI AGENT</em> · 智能体定制</span><span>·</span>
+								<span><em>RAG</em> · 企业知识库</span><span>·</span>
+								<span><em>AIGC</em> · 营销内容生产</span><span>·</span>
+								<span><em>XR</em> · 元宇宙展厅</span><span>·</span>
+								<span><em>H5 / MINI-APP</em> · 互动体验</span><span>·</span>
+								<span><em>SAAS</em> · 政企系统</span><span>·</span>
+								<span><em>3D</em> · 云展厅</span><span>·</span>
+								<span><em>DATA</em> · 数据中台</span><span>·</span>
+								<span><em>DIGITAL TWIN</em> · 数字孪生</span><span>·</span>
+								<span><em>AI AGENT</em> · 智能体定制</span><span>·</span>
+								<span><em>RAG</em> · 企业知识库</span><span>·</span>
+								<span><em>AIGC</em> · 营销内容生产</span><span>·</span>
+								<span><em>XR</em> · 元宇宙展厅</span><span>·</span>
+								<span><em>H5 / MINI-APP</em> · 互动体验</span><span>·</span>
+								<span><em>SAAS</em> · 政企系统</span><span>·</span>
+								<span><em>3D</em> · 云展厅</span><span>·</span>
+								<span><em>DATA</em> · 数据中台</span><span>·</span>
+								<span><em>DIGITAL TWIN</em> · 数字孪生</span><span>·</span>
+							</div>
+						</div>
+					</div>
+					<!--                        <img src="./images/combg.png" class="jy-bg" alt="">-->
+				</div>
+			</section>
+             <!-- 内容 -->
+			<section id="content">
+				<div class="content-wrap">
+					<!-- 业务范围 -->
+					<section id="section-services" class="page-section mt-6" style="margin-top: 0 !important; padding-bottom: 80px">
+						<div class="heading-block text-center mb-6">
+							<h2>业务范围</h2>
+							<span>用数字化手段，摆脱发展困境，提升您的核心竞争力</span>
+						</div>
+
+						<div class="container">
+							<div class="row justify-content-center col-mb-50">
+								<div class="col-sm-6 col-lg-4">
+									<div class="jy-business-box feature-box fbox-center fbox-effect border-bottom-0" data-animate="fadeIn">
+										<div class="fbox-icon">
+											<a target="_blank" href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989"
+												><i
+													><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+														<g fill="none">
+															<path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z" />
+															<path fill="#fff" stroke="#fff" d="M12 8h24l8 10l-20 24L4 18l8-10Z" />
+															<path stroke="#000" d="M4 18h40M24 42l-8-24m8 24l8-24" />
+															<path stroke="#fff" d="m8 13l-4 5l20 24l20-24l-4-5" />
+														</g></svg></i
+											></a>
+										</div>
+										<a target="_blank" href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989" class="fbox-content jy-ywfw-padding" style="display: block; text-decoration: none; color: inherit;">
+											<h3>政企信息化系统</h3>
+											<p>为政府和企业提供综合性信息化解决方案，提高政府和企业的管理效率和服务水平</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-sm-6 col-lg-4">
+									<div class="jy-business-box feature-box fbox-center fbox-effect border-bottom-0" data-animate="fadeIn">
+										<div class="fbox-icon">
+											<a target="_blank" href="https://www.9shadow.com/virtualSimulationTeaching.html"
+												><i
+													><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 20 20">
+														<path fill="#fff" d="M3.33 8L10 12l10-6l-10-6L0 6h10v2H3.33zM0 8v8l2-2.22V9.2L0 8zm10 12l-5-3l-2-1.2v-6l7 4.2l7-4.2v6L10 20z" /></svg></i
+											></a>
+										</div>
+										<a target="_blank" href="https://www.9shadow.com/virtualSimulationTeaching.html" class="fbox-content jy-ywfw-padding" style="display: block; text-decoration: none; color: inherit;">
+											<h3>教育教学系统</h3>
+											<p>为学校和教师提供更方便的教学管理和教学资源的系统，提高教育教学的效率和质量</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-sm-6 col-lg-4">
+									<div class="jy-business-box feature-box fbox-center fbox-effect border-bottom-0" data-animate="fadeIn">
+										<div class="fbox-icon">
+											<a href="https://www.9shadow.com/miniProgram.html"
+												><i
+													><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+														<path fill="#fff" d="M15.85 8.14c.39 0 .77.03 1.14.08C16.31 5.25 13.19 3 9.44 3c-4.25 0-7.7 2.88-7.7 6.43c0 2.05 1.15 3.86 2.94 5.04L3.67 16.5l2.76-1.19c.59.21 1.21.38 1.87.47c-.09-.39-.14-.79-.14-1.21c-.01-3.54 3.44-6.43 7.69-6.43zM12 5.89a.96.96 0 1 1 0 1.92a.96.96 0 0 1 0-1.92zM6.87 7.82a.96.96 0 1 1 0-1.92a.96.96 0 0 1 0 1.92z" />
+														<path fill="#fff" d="M22.26 14.57c0-2.84-2.87-5.14-6.41-5.14s-6.41 2.3-6.41 5.14s2.87 5.14 6.41 5.14c.58 0 1.14-.08 1.67-.2L20.98 21l-1.2-2.4c1.5-.94 2.48-2.38 2.48-4.03zm-8.34-.32a.96.96 0 1 1 .96-.96c.01.53-.43.96-.96.96zm3.85 0a.96.96 0 1 1 0-1.92a.96.96 0 0 1 0 1.92z" /></svg></i
+											></a>
+										</div>
+										<a target="_blank" href="https://www.9shadow.com/miniProgram.html" class="fbox-content jy-ywfw-padding" style="display: block; text-decoration: none; color: inherit;">
+											<h3>微信/小程序</h3>
+											<p>基于微信平台的轻量级应用程序开发，可用于信息传递、社交互动、商业服务等</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-sm-6 col-lg-4">
+									<div class="jy-business-box feature-box fbox-center fbox-effect border-bottom-0" data-animate="fadeIn">
+										<div class="fbox-icon">
+											<a href="https://www.9shadow.com/marketing.html"
+												><i
+													><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+														<mask id="ipSDiamonds0">
+															<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+																<path fill="#fff" stroke="#fff" d="M12 8h24l8 10l-20 24L4 18l8-10Z" />
+																<path stroke="#000" d="M4 18h40M24 42l-8-24m8 24l8-24" />
+																<path stroke="#fff" d="m8 13l-4 5l20 24l20-24l-4-5" />
+															</g>
+														</mask>
+														<path fill="#fff" d="M0 0h48v48H0z" mask="url(#ipSDiamonds0)" /></svg></i
+											></a>
+										</div>
+										<a target="_blank" href="https://www.9shadow.com/marketing.html" class="fbox-content jy-ywfw-padding" style="display: block; text-decoration: none; color: inherit;">
+											<h3>品牌营销H5</h3>
+											<p>基于牌网站的网页开发，为品牌提供更加生动、直观、互动的营销手段</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-sm-6 col-lg-4">
+									<div class="jy-business-box feature-box fbox-center fbox-effect border-bottom-0" data-animate="fadeIn">
+										<div class="fbox-icon">
+											<a href="https://www.9shadow.com/onlineRetailers.html"
+												><i
+													><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+														<path fill="#fff" d="M4 20h2V10a1 1 0 0 1 1-1h12V7a1 1 0 0 0-1-1h-3.051c-.252-2.244-2.139-4-4.449-4S6.303 3.756 6.051 6H3a1 1 0 0 0-1 1v11a2 2 0 0 0 2 2zm6.5-16c1.207 0 2.218.86 2.45 2h-4.9c.232-1.14 1.243-2 2.45-2z" />
+														<path fill="#fff" d="M21 11H9a1 1 0 0 0-1 1v8a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-8a1 1 0 0 0-1-1zm-6 7c-2.757 0-5-2.243-5-5h2c0 1.654 1.346 3 3 3s3-1.346 3-3h2c0 2.757-2.243 5-5 5z" /></svg></i
+											></a>
+										</div>
+										<a target="_blank" href="https://www.9shadow.com/onlineRetailers.html" class="fbox-content jy-ywfw-padding" style="display: block; text-decoration: none; color: inherit;">
+											<h3>新零售电商</h3>
+											<p>帮助商家实现线上线下融合、提高销售效率、降低成本、提升用户体验和粘性，增强品牌影响力和竞争力</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-sm-6 col-lg-4">
+									<div class="jy-business-box feature-box fbox-center fbox-effect border-bottom-0" data-animate="fadeIn">
+										<div class="fbox-icon">
+											<a href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989"
+												><i
+													><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+														<path fill="#fff" d="M15.85 8.14c.39 0 .77.03 1.14.08C16.31 5.25 13.19 3 9.44 3c-4.25 0-7.7 2.88-7.7 6.43c0 2.05 1.15 3.86 2.94 5.04L3.67 16.5l2.76-1.19c.59.21 1.21.38 1.87.47c-.09-.39-.14-.79-.14-1.21c-.01-3.54 3.44-6.43 7.69-6.43zM12 5.89a.96.96 0 1 1 0 1.92a.96.96 0 0 1 0-1.92zM6.87 7.82a.96.96 0 1 1 0-1.92a.96.96 0 0 1 0 1.92z" />
+														<path fill="#fff" d="M22.26 14.57c0-2.84-2.87-5.14-6.41-5.14s-6.41 2.3-6.41 5.14s2.87 5.14 6.41 5.14c.58 0 1.14-.08 1.67-.2L20.98 21l-1.2-2.4c1.5-.94 2.48-2.38 2.48-4.03zm-8.34-.32a.96.96 0 1 1 .96-.96c.01.53-.43.96-.96.96zm3.85 0a.96.96 0 1 1 0-1.92a.96.96 0 0 1 0 1.92z" /></svg></i
+											></a>
+										</div>
+										<a target="_blank" href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989" class="fbox-content jy-ywfw-padding" style="display: block; text-decoration: none; color: inherit;">
+											<h3>移动App</h3>
+											<p>运行在移动设备上的应用程序，帮助企业提供更加便捷、个性化的服务和体验</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-sm-6 col-lg-4">
+									<div class="jy-business-box feature-box fbox-center fbox-effect border-bottom-0" data-animate="fadeIn">
+										<div class="fbox-icon">
+											<a href="https://www.9shadow.com/metaverse.html"
+												><i
+													><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+														<path fill="#fff" d="M10.25 4.25A.75.75 0 0 1 11 5v8h8a.75.75 0 0 1 .743.648l.007.102c0 4.97-4.03 8.5-9 8.5a9 9 0 0 1-9-9c0-4.97 3.53-9 8.5-9z" />
+														<path fill="#fff" d="M21 7a1 1 0 0 1 0 2v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V9a1 1 0 0 1 0-2h18ZM7 11a1 1 0 0 0-1 1v7h2v-7a1 1 0 0 0-1-1Zm5 0a1 1 0 0 0-1 1v7h2v-7a1 1 0 0 0-1-1Zm5 0a1 1 0 0 0-1 1v7h2v-7a1 1 0 0 0-1-1Zm1-7a1 1 0 1 1 0 2H6a1 1 0 0 1 0-2h12Z" /></svg></i
+											></a>
+										</div>
+										<a target="_blank" href="https://www.9shadow.com/metaverse.html" class="fbox-content jy-ywfw-padding" style="display: block; text-decoration: none; color: inherit;">
+											<h3>元宇宙 · AI · 区块链 · 具身智能</h3>
+											<p>采用虚拟现实技术和区块链技术的数字世界，融合具身智能机器人，打造人机共生的沉浸式互动新生态</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-sm-6 col-lg-4">
+									<div class="jy-business-box feature-box fbox-center fbox-effect border-bottom-0" data-animate="fadeIn">
+										<div class="fbox-icon">
+											<a href="https://www.9shadow.com/visualization.html"
+												><i
+													><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+														<path fill="#fff" d="M10.25 4.25A.75.75 0 0 1 11 5v8h8a.75.75 0 0 1 .743.648l.007.102c0 4.97-4.03 8.5-9 8.5a9 9 0 0 1-9-9c0-4.97 3.53-9 8.5-9z" />
+														<path fill="#fff" d="M21 7a1 1 0 0 1 0 2v10a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V9a1 1 0 0 1 0-2h18ZM7 11a1 1 0 0 0-1 1v7h2v-7a1 1 0 0 0-1-1Zm5 0a1 1 0 0 0-1 1v7h2v-7a1 1 0 0 0-1-1Zm5 0a1 1 0 0 0-1 1v7h2v-7a1 1 0 0 0-1-1Zm1-7a1 1 0 1 1 0 2H6a1 1 0 0 1 0-2h12Z" /></svg></i
+											></a>
+										</div>
+										<a target="_blank" href="https://www.9shadow.com/visualization.html" class="fbox-content jy-ywfw-padding" style="display: block; text-decoration: none; color: inherit;">
+											<h3>数据可视化 · 3D展示</h3>
+											<p>将数据转化为图形化展示的技术，帮助企业更加直观、清晰地了解业务状况、发现问题、优化决策、提高效率和竞争力</p>
+										</a>
+									</div>
+								</div>
+
+								<div class="col-sm-6 col-lg-4">
+									<div class="jy-business-box feature-box fbox-center fbox-effect border-bottom-0" data-animate="fadeIn">
+										<div class="fbox-icon">
+											<a href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989"
+												><i
+													><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48">
+														<mask id="ipSComputer0">
+															<g fill="none" stroke-width="4">
+																<path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M19 32h10v9H19z" />
+																<rect width="38" height="24" x="5" y="8" fill="#fff" stroke="#fff" rx="2" />
+																<path stroke="#000" stroke-linecap="round" stroke-linejoin="round" d="M22 27h4" />
+																<path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M14 41h20" />
+															</g>
+														</mask>
+														<path fill="#fff" d="M0 0h48v48H0z" mask="url(#ipSComputer0)" /></svg></i
+											></a>
+										</div>
+										<a target="_blank" href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989" class="fbox-content jy-ywfw-padding" style="display: block; text-decoration: none; color: inherit;">
+											<h3>品牌网站定制</h3>
+											<p>为企业提供定制化的品牌网站建设服务，以展示企业品牌形象和产品信息</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- 介绍(固定背景区域) -->
+					<section id="cta-jy" class="cta-jy">
+						<div class="container">
+							<div class="row-jy">
+								<div class="col-lg-9 text-center text-lg-start">
+									<h3 style="color: #fff; font-weight: 700">Hi，打个招呼吧</h3>
+									<p>欢迎联系我们，专业定制化软件服务。期待为您创造价值，与您携手合作。</p>
+								</div>
+								<div class="col-lg-3 cta-btn-container text-center">
+									<a href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989" class="jy-button button button-large button-light button-border button-rounded m-0 button-change">
+										<span>联系我们</span>
+										<span>联系我们</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- 介绍（数字自增） -->
+					<div id="jy-auto-increment" class="section border-top-0 mt-4 mb-4 border-0" style="margin: 0 !important; background-color: #fff">
+						<div class="container">
+							<div class="row col-mb-50" style="justify-content: space-between">
+								<div class="col-sm-6 col-lg-3 text-center" data-animate="bounceIn">
+									<i class="i-plain i-xlarge mx-auto mb-0 bi-code"></i>
+									<div class="counter counter-lined"><span data-from="0" data-to="10" data-refresh-interval="2" data-speed="500"></span>+</div>
+									<h4 style="margin-top: 20px">十年专注开发服务</h4>
+								</div>
+
+								<div class="col-sm-6 col-lg-3 text-center" data-animate="bounceIn" data-delay="200">
+									<i class="i-plain i-xlarge mx-auto mb-0 bi-magic"></i>
+									<div class="counter counter-lined"><span data-from="100" data-to="500" data-refresh-interval="50" data-speed="2500"></span>+</div>
+									<h4 style="margin-top: 20px">五百家成功案例</h4>
+								</div>
+
+								<div class="col-sm-6 col-lg-3 text-center" data-animate="bounceIn" data-delay="400">
+									<i class="i-plain i-xlarge mx-auto mb-0 bi-file-earmark-text"></i>
+									<div class="counter counter-lined"><span data-from="10" data-to="100" data-refresh-interval="25" data-speed="2000"></span>+</div>
+									<h4 style="margin-top: 20px">一百种行业解决方案</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 高端定制 -->
+					<section id="customized" class="section customized" style="margin: 0">
+						<!-- 高端定制标题 -->
+						<div class="heading-block text-center">
+							<h2 data-animate="fadeIn" data-speed="200">高端定制</h2>
+							<span data-animate="fadeIn" data-speed="200" data-delay="200">挖掘用户需求，全平台 全类型 都能量身定制开发</span>
+						</div>
+						<div class="customizedcon container">
+							<ul class="clearfloat">
+								<li>
+									<a href="javascript:void(0);">
+										<img src="image-jy/index/picture_1_new.png" />
+										<div class="custext">
+											<h5>移动应用定制</h5>
+										</div>
+										<div class="cusbox">
+											<div class="cusboxcon">
+												<h5>移动应用定制</h5>
+												<p>基于个性化、体验式的移动端产品设计，为企业量身打造APP、小程序、公众号、互动游戏、移动H5等移动应用的定制开发及产品迭代。</p>
+												<a href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989" class="jy-button button button-large button-white button-light button-border button-rounded m-0 button-change" target="_blank">
+													<span>点击咨询</span>
+													<span>点击咨询</span>
+												</a>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<img src="image-jy/index/picture_2_new.png" />
+										<div class="custext">
+											<h5>互联网平台定制</h5>
+										</div>
+										<div class="cusbox">
+											<div class="cusboxcon">
+												<h5>互联网平台定制</h5>
+												<p>满足企业商业模式的创新需求，为客户提供基于新一代信息技术的互联网全平台设计.开发和运维支撑服务及高质量的产品交付。</p>
+												<a href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989" class="jy-button button button-large button-light button-border button-rounded m-0 button-change" target="_blank">
+													<span>点击咨询</span>
+													<span>点击咨询</span>
+												</a>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<img src="image-jy/index/picture_3_new.png" />
+										<div class="custext">
+											<h5>业务系统定制</h5>
+										</div>
+										<div class="cusbox">
+											<div class="cusboxcon">
+												<h5>业务系统定制</h5>
+												<p>消费升级和市场细分的驱动下，帮助企业对业务信息系统重塑或升级改造，实现端到端互联互通的业务生态系统。</p>
+												<a href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989" class="jy-button button button-large button-light button-border button-rounded m-0 button-change" target="_blank">
+													<span>点击咨询</span>
+													<span>点击咨询</span>
+												</a>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);">
+										<img src="image-jy/index/picture_4_new.png" style="width: 200%; object-fit: cover" />
+										<div class="custext">
+											<h5>产品设计规划</h5>
+										</div>
+										<div class="cusbox">
+											<div class="cusboxcon">
+												<h5>产品设计规划</h5>
+												<p>寻求用户、商业及技术的平衡点，开展用户体验驱动创新的系统蓝图规划及产品设计。</p>
+												<a href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989" class="jy-button button button-large button-light button-border button-rounded m-0 button-change" target="_blank">
+													<span>点击咨询</span>
+													<span>点击咨询</span>
+												</a>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- 具身智能 -->
+					<!-- style="height: 1300px;width:100%; background-image: url('./img_2025/bg.jpg');background-repeat: no-repeat;background-size: cover;" -->
+					<!-- 高端定制标题 -->
+					<!-- <section id="Intelligence" class="section Intelligence" style="background-color: white; margin: 0; padding: 0">
+						<div class="heading-white text-center" style="width: 100%; position: absolute; top: 50px">
+							<h2 data-animate="fadeIn" data-speed="200" style="color: white">具身智能</h2>
+							<span data-animate="fadeIn" data-speed="200" data-delay="200" style="color: white">机器人训练服务上线</span>
+						</div>
+						<div>
+							<img src="./img_2025/bg.jpg" style="width: 100%; height: 1580px; object-fit: cover" />
+						</div>
+					</section> -->
+
+					<!-- 案例 -->
+					<section id="section-work" class="page-section mt-6" style="background-color: #fff">
+						<!-- 案例标题 -->
+						<div class="heading-block text-center fadeIn animated">
+							<h2 data-animate="fadeIn" data-speed="200">最新案例</h2>
+							<span data-animate="fadeIn" data-speed="200" data-delay="200">每行代码反复推敲，每一个页面反复打磨，每一次服务让您放心</span>
+						</div>
+						<div class="container">
+							<!-- 切换分类 -->
+							<div class="grid-filter-wrap">
+								<ul id="cases-filter" class="grid-filter style-2" data-container="#portfolio"></ul>
+								<!-- <div class="grid-shuffle rounded">
+                <a onclick="location.href='case.html'" style="all: unset">
+                  <li class="i-material-symbols-grid-view-rounded"></li>
+                </a>
+              </div> -->
+							</div>
+
+							<!--案例内容 start -->
+							<div id="customPortfolio">
+								<!-- js列表渲染 -->
+							</div>
+							<!-- <div id="portfolio" class="portfolio row grid-container" data-animate="fadeIn" data-layout="fitRows">
+
+							</div> -->
+							<div class="col-12 form-group" style="margin-bottom: 0; text-align: center">
+								<a href="./case.html" class="jy-button jy-button-blue button button-large button-rounded m-0 button-change">
+									<span>更多案例</span>
+									<span>更多案例</span>
+								</a>
+							</div>
+							<!-- 案例内容 end -->
+						</div>
+						<div class="divider divider-sm divider-center mt-6" style="margin-bottom: 0 !important">
+							<i class="bi-star-fill"></i>
+						</div>
+					</section>
+
+					<!-- 合作伙伴 -->
+					<div id="swiper1" class="swiper-container">
+						<div id="wrapper1" class="swiper-wrapper swiper-no-swiping"></div>
+					</div>
+					<div id="swiper2" class="swiper-container">
+						<div id="wrapper2" class="swiper-wrapper swiper-no-swiping"></div>
+					</div>
+					<div id="swiper3" class="swiper-container">
+						<div id="wrapper3" class="swiper-wrapper swiper-no-swiping"></div>
+					</div>
+					<!-- video -->
+					<div class="section dark my-0 border-0" style="height: 400px; padding: 145px 0">
+						<div class="container">
+							<!-- <div class="slider-caption slider-caption-center" style="position: relative;">
+                            <div data-animate="fadeInUp">
+                                <h2 style="font-size: 42px;">专业服务</h2>
+                                <p class="d-none d-sm-block">创始团队均来自BAT,为您的企业提供更优质的技术服务</p>
+                                <a href="#"
+                                    class="button button-border button-rounded button-white button-light button-large ms-0 mb-0 d-none d-md-inline-block"
+                                    style="margin-top: 20px;">Show More</a>
+                            </div>
+                        </div> -->
+						</div>
+
+						<div class="video-wrap no-placeholder">
+							<video poster="image-jy/video/九影网络_banner_1.png" preload="none" loop autoplay muted playsinline loading="lazy">
+								<source src="image-jy/video/九影网络_banner_system.mp4" type="video/mp4" />
+							</video>
+							<div class="video-overlay" style="background-color: rgba(0, 0, 0, 0.3)"></div>
+						</div>
+					</div>
+					<!-- 标签 -->
+					<div class="row mb-6 align-items-stretch" style="margin-bottom: 0 !important">
+						<div class="col-lg-4 dark col-padding overflow-hidden" style="background-color: var(--cnvs-themecolor)">
+							<div class="jy-flex-column-between">
+								<h3 class="text-uppercase" style="font-weight: 600">专业团队，经验丰富</h3>
+								<p style="line-height: 1.8">来自BAT大厂的技术大牛技术<br />拥有10多年大型项目研发经验</p>
+								<a target="_blank" href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989" class="jy-button button button-border button-light button-rounded m-0 button-change button-to-right">
+									<span>立刻进入</span>
+									<span>立刻进入</span>
+								</a>
+								<i class="bi-lightbulb bg-icon"></i>
+							</div>
+						</div>
+
+						<div class="col-lg-4 dark col-padding overflow-hidden" style="background-color: #34495e">
+							<div class="jy-flex-column-between">
+								<h3 class="text-uppercase" style="font-weight: 600">深刻理解客户需求</h3>
+								<p style="line-height: 1.8">累积各行业的开发经验<br />为您的企业快速提供技术解决方案</p>
+								<a target="_blank" href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989" class="jy-button button button-border button-light button-rounded m-0 button-change button-to-right">
+									<span>立刻进入</span>
+									<span>立刻进入</span>
+								</a>
+								<i class="bi-gear-fill bg-icon"></i>
+							</div>
+						</div>
+
+						<div class="col-lg-4 dark col-padding overflow-hidden" style="background-color: #e74c3c">
+							<div class="jy-flex-column-between">
+								<h3 class="text-uppercase" style="font-weight: 600">项目质量与交付</h3>
+								<p style="line-height: 1.8">积极响应客户开发需求<br />采用前沿的技术<br />严格执行国际安全质量管控标准</p>
+								<a target="_blank" href="http://p.qiao.baidu.com/cps/chat?siteId=13791900&userId=28019655&siteToken=9baf6faf281a66f89f8697aad1e01989" class="jy-button button button-border button-light button-rounded m-0 button-change button-to-right">
+									<span>立刻进入</span>
+									<span>立刻进入</span>
+								</a>
+								<i class="bi-hand-thumbs-up bg-icon"></i>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+					</div>
+
+					<!-- 资讯标题 -->
+					<div class="section mt-0 border-top-0" style="margin-bottom: 0 !important; background-color: #fff">
+						<div class="container">
+							<div class="heading-block text-center">
+								<h2 data-animate="fadeIn" data-speed="200">九影资讯</h2>
+								<span data-animate="fadeIn" data-speed="200" data-delay="200">关注九影，了解九影，让我们一起见证每一个精彩瞬间</span>
+							</div>
+						</div>
+					</div>
+					<!-- 资讯内容 -->
+					<div>
+						<div class="container">
+							<div class="row posts-md col-mb-30" id="jyarticle">
+								<!-- js列表渲染 -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div id="jy-footer"></div>
+			<script>
+				$('.page-loading .pic')[0].style.width = '10%';
+			</script>
+		</div>
+
+		<!-- 弹窗模板 -->
+		<div class="modal-overlay" id="successModal">
+			<div class="modal-container">
+				<div class="modal-icon">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+					</svg>
+				</div>
+				<h3 class="modal-title">提交成功</h3>
+				<div class="modal-content">需求已成功提交！专属业务顾问将在 1-2 个工作日内与您联系，为您提供专业定制方案，敬请留意来电～</div>
+				<button class="modal-btn" onclick="closeModal()">我知道了</button>
+			</div>
+		</div>
+
+		<style>
+			/* 弹窗遮罩层 */
+			.modal-overlay {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: rgba(0, 0, 0, 0.5);
+				backdrop-filter: blur(4px);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				z-index: 99999;
+				opacity: 0;
+				visibility: hidden;
+				transition: all 0.3s ease;
+			}
+
+			/* 弹窗显示状态 */
+			.modal-overlay.active {
+				opacity: 1;
+				visibility: visible;
+			}
+
+			/* 弹窗主体 */
+			.modal-container {
+				background: #fff;
+				border-radius: 12px;
+				width: 90%;
+				max-width: 420px;
+				padding: 30px 20px;
+				box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+				transform: translateY(-20px) scale(0.95);
+				transition: all 0.3s ease;
+				text-align: center;
+			}
+
+			.modal-overlay.active .modal-container {
+				transform: translateY(0) scale(1);
+			}
+
+			/* 弹窗图标 */
+			.modal-icon {
+				width: 64px;
+				height: 64px;
+				margin: 0 auto 20px;
+				background: #f0f9ff;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+
+			.modal-icon svg {
+				width: 32px;
+				height: 32px;
+				fill: #1677ff;
+			}
+
+			/* 弹窗标题 */
+			.modal-title {
+				font-size: 18px;
+				font-weight: 600;
+				color: #1f2937;
+				margin-bottom: 12px;
+			}
+
+			/* 弹窗内容 */
+			.modal-content {
+				font-size: 14px;
+				color: #4b5563;
+				line-height: 1.6;
+				margin-bottom: 24px;
+				padding: 0 10px;
+			}
+
+			/* 弹窗按钮 */
+			.modal-btn {
+				display: inline-block;
+				padding: 10px 32px;
+				background: #1677ff;
+				color: #fff;
+				border: none;
+				border-radius: 6px;
+				font-size: 14px;
+				font-weight: 500;
+				cursor: pointer;
+				transition: background 0.2s ease;
+			}
+
+			.modal-btn:hover {
+				background: #0958d9;
+			}
+
+			/* 响应式适配 */
+			@media (max-width: 480px) {
+				.modal-container {
+					padding: 24px 16px;
+				}
+
+				.modal-title {
+					font-size: 16px;
+				}
+
+				.modal-content {
+					font-size: 13px;
+				}
+
+				.modal-btn {
+					padding: 8px 24px;
+					width: 80%;
+				}
+			}
+		</style>
+		<!-- 弹窗模板 -->
+
+		<!-- 返回顶部 -->
+		<div id="gotoTop" class="uil uil-angle-up" defer></div>
+		<!-- 全局参数 -->
+		<script src="jy-js/globalVariable.js" defer></script>
+		<script src="jy-js/home.js?t=20241023" defer></script>
+		<!-- js -->
+		<script src="js/swiper.min.js" defer></script>
+
+		<script src="js/functions.js" defer></script>
+
+		<script src="include/rs-plugin/js/jquery.themepunch.tools.min.js" defer></script>
+		<script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js" defer></script>
+		<script>
+			let tpj = jQuery;
+			let revapi202;
+
+			tpj(document).ready(function () {
+				tpj('.page-loading .pic')[0].style.width = '20%';
+				tpj('#jy-header-menu').load('components/header-menu.html');
+				tpj('.page-loading .pic')[0].style.width = '30%';
+				tpj('#jy-footer').load('components/footer.html');
+				tpj('.page-loading .pic')[0].style.width = '40%';
+
+				if (!tpj('#rev_slider_579_1').length) {
+					requestAnimationFrame(function () {
+						if (window.__finishPageLoading) window.__finishPageLoading();
+					});
+				} else if (tpj('#rev_slider_579_1').revolution == undefined) {
+					if (window.__finishPageLoading) window.__finishPageLoading();
+				} else {
+					revapi202 = tpj('#rev_slider_579_1')
+						.show()
+						.revolution({
+							sliderType: 'standard',
+							jsFileLocation: 'include/rs-plugin/js/',
+							sliderLayout: 'fullscreen',
+							dottedOverlay: 'none',
+							delay: 9000,
+							responsiveLevels: [1140, 1024, 778, 480],
+							visibilityLevels: [1140, 1024, 778, 480],
+							gridwidth: [1140, 1024, 778, 480],
+							gridheight: [728, 768, 960, 720],
+							lazyType: '',
+							shadow: 0,
+							spinner: 'off',
+							stopLoop: 'on',
+							stopAfterLoops: 0,
+							stopAtSlide: 1,
+							shuffle: 'off',
+							autoHeight: 'off',
+							fullScreenAutoWidth: 'off',
+							fullScreenAlignForce: 'off',
+							fullScreenOffsetContainer: '',
+							fullScreenOffset: '',
+							disableProgressBar: 'on',
+							hideThumbsOnMobile: 'off',
+							hideSliderAtLimit: 0,
+							hideCaptionAtLimit: 0,
+							hideAllCaptionAtLilmit: 0,
+							debugMode: false,
+							fallbacks: {
+								simplifyAll: 'off',
+								disableFocusListener: false,
+							},
+							parallax: {
+								type: 'mouse',
+								origo: 'slidercenter',
+								speed: 300,
+								levels: [2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 49, 50, 51, 55],
+							},
+							navigation: {
+								keyboardNavigation: 'off',
+								keyboard_direction: 'horizontal',
+								mouseScrollNavigation: 'off',
+								onHoverStop: 'off',
+								touch: {
+									touchenabled: 'on',
+									swipe_threshold: 75,
+									swipe_min_touches: 1,
+									swipe_direction: 'horizontal',
+									drag_block_vertical: false,
+								},
+							},
+						});
+
+					revapi202.on('revolution.slide.onloaded', function () {
+						setTimeout(function () {
+							SEMICOLON.Base.sliderDimensions();
+							if (window.__finishPageLoading) window.__finishPageLoading();
+						}, 50);
+					});
+
+					revapi202.on('revolution.slide.onchange', function () {
+						SEMICOLON.Base.sliderMenuClass();
+						if (window.__finishPageLoading) window.__finishPageLoading();
+					});
+				}
+
+				getHomeCases();
+				getHomeArticles();
+				setHomeSwiper();
+			});
+		</script>
+
+		<script>
+			(function () {
+				const hero = document.querySelector('.jy-neo-hero');
+				const canvas = document.getElementById('neo-pc');
+				if (!hero || !canvas || !canvas.getContext) return;
+				const ctx = canvas.getContext('2d', { alpha: true });
+				const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+				const isMobile = window.matchMedia('(max-width: 760px)').matches;
+				const lowEnd = isMobile || (navigator.hardwareConcurrency || 4) <= 4;
+				const linkDist = lowEnd ? 100 : 120;
+				const linkDistSq = linkDist * linkDist;
+				const mouseDist = lowEnd ? 150 : 170;
+				const mouseDistSq = mouseDist * mouseDist;
+				let width = 0;
+				let height = 0;
+				let points = [];
+				let running = !reduce;
+				let rafId = 0;
+				let resizeTimer = 0;
+				let mouseRaf = 0;
+				const mouse = { x: -9999, y: -9999 };
+
+				function size() {
+					width = canvas.clientWidth;
+					height = canvas.clientHeight;
+					canvas.width = width;
+					canvas.height = height;
+					const density = lowEnd ? 60000 : 34000;
+					const target = Math.min(180, Math.round((width * height) / density));
+					points = new Array(target).fill(0).map(function () {
+						return {
+							x: Math.random() * width,
+							y: Math.random() * height,
+							vx: (Math.random() - 0.5) * 0.18,
+							vy: (Math.random() - 0.5) * 0.18,
+							r: Math.random() * 1.3 + 0.3,
+							z: Math.random(),
+						};
+					});
+				}
+
+				function frame() {
+					ctx.clearRect(0, 0, width, height);
+					const count = points.length;
+					for (let index = 0; index < count; index += 1) {
+						const point = points[index];
+						point.x += point.vx;
+						point.y += point.vy;
+						if (point.x < 0 || point.x > width) point.vx *= -1;
+						if (point.y < 0 || point.y > height) point.vy *= -1;
+						ctx.beginPath();
+						ctx.fillStyle = 'rgba(180,210,255,' + (0.35 + point.z * 0.4) + ')';
+						ctx.arc(point.x, point.y, point.r * (0.6 + point.z * 0.8), 0, Math.PI * 2);
+						ctx.fill();
+					}
+
+					const cell = linkDist;
+					const cols = Math.ceil(width / cell) + 1;
+					const grid = new Array((Math.ceil(height / cell) + 1) * cols);
+					for (let index = 0; index < count; index += 1) {
+						const point = points[index];
+						const cx = (point.x / cell) | 0;
+						const cy = (point.y / cell) | 0;
+						const bucketIndex = cy * cols + cx;
+						(grid[bucketIndex] || (grid[bucketIndex] = [])).push(point);
+					}
+
+					ctx.lineWidth = 1;
+					for (let index = 0; index < count; index += 1) {
+						const pointA = points[index];
+						const cx = (pointA.x / cell) | 0;
+						const cy = (pointA.y / cell) | 0;
+						for (let oy = 0; oy <= 1; oy += 1) {
+							for (let ox = -1; ox <= 1; ox += 1) {
+								if (oy === 0 && ox < 0) continue;
+								const bucket = grid[(cy + oy) * cols + (cx + ox)];
+								if (!bucket) continue;
+								for (let bi = 0; bi < bucket.length; bi += 1) {
+									const pointB = bucket[bi];
+									if (pointB === pointA) continue;
+									if (oy === 0 && ox === 0 && pointB.x <= pointA.x) continue;
+									const dx = pointA.x - pointB.x;
+									const dy = pointA.y - pointB.y;
+									const distanceSq = dx * dx + dy * dy;
+									if (distanceSq < linkDistSq) {
+										const alpha = (1 - distanceSq / linkDistSq) * 0.22;
+										ctx.strokeStyle = 'rgba(125,200,255,' + alpha + ')';
+										ctx.beginPath();
+										ctx.moveTo(pointA.x, pointA.y);
+										ctx.lineTo(pointB.x, pointB.y);
+										ctx.stroke();
+									}
+								}
+							}
+						}
+
+						if (!lowEnd && mouse.x > -1000) {
+							const dx = pointA.x - mouse.x;
+							const dy = pointA.y - mouse.y;
+							const distanceSq = dx * dx + dy * dy;
+							if (distanceSq < mouseDistSq) {
+								const alpha = (1 - distanceSq / mouseDistSq) * 0.55;
+								ctx.strokeStyle = 'rgba(255,255,255,' + alpha + ')';
+								ctx.beginPath();
+								ctx.moveTo(pointA.x, pointA.y);
+								ctx.lineTo(mouse.x, mouse.y);
+								ctx.stroke();
+							}
+						}
+					}
+
+					if (running) rafId = requestAnimationFrame(frame);
+				}
+
+				document.addEventListener('visibilitychange', function () {
+					if (document.hidden) {
+						running = false;
+						if (rafId) cancelAnimationFrame(rafId);
+						rafId = 0;
+					} else if (!reduce && !rafId) {
+						running = true;
+						rafId = requestAnimationFrame(frame);
+					}
+				});
+
+				window.addEventListener('mousemove', function (event) {
+					if (mouseRaf) return;
+					mouseRaf = requestAnimationFrame(function () {
+						mouse.x = event.clientX;
+						mouse.y = event.clientY;
+						mouseRaf = 0;
+					});
+				}, { passive: true });
+
+				window.addEventListener('mouseleave', function () {
+					mouse.x = -9999;
+					mouse.y = -9999;
+				});
+
+				window.addEventListener('resize', function () {
+					clearTimeout(resizeTimer);
+					resizeTimer = setTimeout(size, 150);
+				});
+
+				size();
+				if (!reduce) {
+					rafId = requestAnimationFrame(frame);
+				} else {
+					frame();
+				}
+			})();
+
+			(function () {
+				const grid = document.querySelector('.jy-neo-biz-grid');
+				const wrap = document.querySelector('.jy-neo-biz');
+				if (!grid || !wrap || window.matchMedia('(max-width: 980px)').matches) return;
+				let rafId = 0;
+				let pending = 0;
+				let currentX = 8;
+				let currentY = -14;
+				let targetX = 8;
+				let targetY = -14;
+
+				function tick() {
+					currentX += (targetX - currentX) * 0.08;
+					currentY += (targetY - currentY) * 0.08;
+					grid.style.transform = 'rotateX(' + currentX + 'deg) rotateY(' + currentY + 'deg)';
+					if (Math.abs(targetX - currentX) < 0.01 && Math.abs(targetY - currentY) < 0.01) {
+						rafId = 0;
+						return;
+					}
+					rafId = requestAnimationFrame(tick);
+				}
+
+				wrap.addEventListener('mousemove', function (event) {
+					if (pending) return;
+					pending = requestAnimationFrame(function () {
+						pending = 0;
+						const rect = wrap.getBoundingClientRect();
+						const px = (event.clientX - rect.left) / rect.width - 0.5;
+						const py = (event.clientY - rect.top) / rect.height - 0.5;
+						targetX = 8 + (-py * 10);
+						targetY = -14 + (px * 14);
+						if (!rafId) rafId = requestAnimationFrame(tick);
+					});
+				}, { passive: true });
+
+				wrap.addEventListener('mouseleave', function () {
+					targetX = 8;
+					targetY = -14;
+					if (!rafId) rafId = requestAnimationFrame(tick);
+				});
+			})();
+		</script>
+
+		<script>
+			const modal = document.getElementById('successModal');
+
+			function openModal() {
+				modal.classList.add('active');
+				document.body.style.overflow = 'hidden';
+			}
+
+			function closeModal() {
+				modal.classList.remove('active');
+				document.body.style.overflow = '';
+			}
+
+			modal.addEventListener('click', function (e) {
+				if (e.target === modal) {
+					closeModal();
+				}
+			});
+
+			document.addEventListener('keydown', function (e) {
+				if (e.key === 'Escape' && modal.classList.contains('active')) {
+					closeModal();
+				}
+			});
+		</script>
+	</body>
+</html>

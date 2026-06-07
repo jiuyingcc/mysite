@@ -1,0 +1,255 @@
+/* 关于九影 */
+.aboutjy {
+    background-color: #f8f9fa;
+    width: 100%;
+    padding: 5% 0;
+    
+}
+
+.aboutjy p {
+        text-align: left;
+        color: #585858;
+        text-indent: 2em;
+        letter-spacing: 3px;
+}
+.aboutjy p:nth-of-type(1) {
+    margin-top: 30px;
+}
+.aboutjy p:not(:nth-child(2)) {
+    font-size: 21px;
+}
+/* 一站式服务 */
+.oneServer {
+    width: 100%;
+    padding: 5% 0;
+}
+.oneServer .oneServer_content {
+    display:flex;
+    justify-content: space-between;
+    margin-top: 6%;
+}
+.oneServer .oneServer_content .left,.oneServer .oneServer_content .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+}
+.oneServer .oneServer_content .left .top:hover,.oneServer .oneServer_content .left .bottom:hover,.oneServer .oneServer_content .right .top:hover,.oneServer .oneServer_content .right .bottom:hover {
+    font-weight: bold;
+}
+.oneServer .oneServer_content p {
+    font-size: 30px;
+    color: #0072ff;
+    margin-bottom: 25px;
+}
+.oneServer .oneServer_content span {
+    font-size: 19px;
+    color: #585858;
+    margin-bottom: 15px;
+}
+.oneServer .oneServer_content .top,.oneServer .oneServer_content .bottom {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* 业务范围 */
+.businessScope {
+    background-color: #f8f9fa;
+    width: 100%;
+    padding: 5% 0;
+}
+.businessScope .aboutjy_topBar {
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0 25px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    margin-bottom: 5%;
+}
+.businessScope .aboutjy_topBar li {
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+}
+.businessScope .aboutjy_topBar li div:nth-child(1) {
+    background-image: url('../../img_2022/hexagon_blue.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+    height: 88px;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.businessScope .aboutjy_topBar li div:nth-child(2) {
+    font-size: 30px;
+    margin: 10px 0;
+    color: #0072FF;
+}
+.businessScope .aboutjy_topBar li div:nth-child(3) {
+    font-size: 19px;
+    line-height: 35px;
+    color: #0072FF;
+}
+.businessScope_content {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 20px;
+}
+.businessScope_content .businessScope_title {
+    color: #585858;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.businessScope_con {
+    width: 49%;
+    height: 316.19px;
+    padding: 30px 0 0px 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: all .3s;
+}
+.businessScope_con:hover {
+    background-color: #0072FF;
+}
+.businessScope_con:hover .businessScope_title,.businessScope_con:hover .msg span {
+    color: #ffffff;
+}
+.businessScope_content .msg {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.businessScope_content .msg span {
+    /* width: 55%; */
+    min-width: 48%;
+    color: #585858;
+    font-size: 19px;
+}
+
+/* 服务优势 */
+.serviceAdvantage {
+    width: 100%;
+    padding: 5% 0;
+}
+.serviceAdvantage_content {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+.serviceAdvantage_content li {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.serviceAdvantage_content li:hover p,.serviceAdvantage_content li:hover span {
+    color: #0072FF;
+}
+.serviceAdvantage_content li p{
+    font-size: 30px;
+    color: #585858;
+    margin-bottom: 20px;
+}
+.serviceAdvantage_content li span{
+    font-size: 19px;
+    color: #585858;
+}
+
+/* 荣誉资质 */
+.honor {
+    width: 100%;
+    padding: 5% 0;
+    background-color: #f8f9fa;
+}
+.honor_content {
+    margin-top: 60px;
+}
+
+/* 合作企业 */
+.cooperative {
+    width: 100%;
+    padding: 5% 0;
+}
+.cooperative .cooperative_content {
+    margin-top: 60px;
+}
+
+/* 移动端 */
+@media only screen and (max-width:950px) {
+    .businessScope .aboutjy_topBar li {
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+    }
+    .businessScope p:not(:nth-child(2)) {
+        font-size: 13px;
+    }
+    .oneServer .oneServer_content p {
+        font-size: 10px;
+        color: #0072ff;
+        margin-bottom: 12px;
+    }
+    .oneServer .oneServer_content span {
+        font-size: 8px;
+        color: #585858;
+        margin-bottom: 8px;
+    }
+    .oneServer .oneServer_content .left,.oneServer .oneServer_content .right {
+        gap: 20px;
+        min-width: 100px;
+    }
+
+    
+    .businessScope_content {
+        margin-top: 50px;
+        row-gap: 10px;
+    }
+    .businessScope_content .businessScope_title {
+        font-size: 20px;
+    }
+    .businessScope_con {
+        width: 100%;
+        padding: 20px 0 20px 30px;
+    }
+    .businessScope_content .msg {
+        gap: 10px;
+    }
+    .businessScope_content .msg span {
+        font-size: 13px;
+    }
+
+
+    .serviceAdvantage_content {
+        row-gap: 30px;
+    }
+    .serviceAdvantage_content li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .serviceAdvantage_content li p{
+        font-size: 20px;
+        color: #585858;
+        margin-bottom: 15px;
+    }
+    .serviceAdvantage_content li span{
+        font-size: 15px;
+        color: #585858;
+    }
+}

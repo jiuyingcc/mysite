@@ -1,0 +1,1 @@
+var baseUrl = 'https://www.9shadow.com/server/';

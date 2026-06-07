@@ -1,0 +1,251 @@
+li {
+  list-style: none;
+}
+
+.heading-block-jy::after {
+  border: none;
+}
+/* 邮箱颜色 */
+a.jy-rule-a :hover {
+  color: #0072ff !important;
+}
+
+/* navbar右侧间距变小 */
+#header .container {
+  padding-right: 0 !important;
+}
+
+#logo .jy-logo-group {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+#logo .jy-logo-link {
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+
+#logo .jy-ai-service-entry {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: auto;
+  margin-left: 8px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  background: #0072ff;
+  box-shadow: 0 8px 22px -10px rgba(95, 178, 255, 0.8);
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  flex: 0 0 auto;
+}
+
+#logo .jy-ai-service-entry:hover {
+  background: #005ed6;
+  color: #fff !important;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px -12px rgba(95, 178, 255, 0.9);
+}
+
+#logo .jy-ai-service-entry-icon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  flex: 0 0 auto;
+}
+
+#logo .jy-ai-service-entry-text {
+  display: block;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+#logo .jy-ai-service-entry-badge {
+  position: absolute;
+  top: -7px;
+  right: -10px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #06112a;
+  background: #7df9c4;
+  padding: 3px 7px 2px;
+  border-radius: 999px;
+  box-shadow: 0 6px 14px -4px rgba(125, 249, 196, 0.6);
+  transform: rotate(6deg);
+  line-height: 1;
+}
+
+@media (max-width: 767.98px) {
+  #logo .jy-logo-group {
+    gap: 12px;
+  }
+
+  #logo .jy-ai-service-entry {
+    width: auto;
+    margin-left: 4px;
+    padding: 7px 12px;
+    gap: 6px;
+    font-size: 11.5px;
+  }
+
+  #logo .jy-ai-service-entry-icon {
+    width: 12px;
+    height: 12px;
+  }
+
+  #logo .jy-ai-service-entry-badge {
+    top: -6px;
+    right: -8px;
+    font-size: 8px;
+    padding: 2px 5px 1px;
+  }
+}
+
+/* 首页业务范围间距增加 */
+.jy-ywfw-padding {
+  padding: 0 35px;
+}
+
+/* 案例图片 */
+.portfolio-image {
+    /* height: 275px !important; */
+    object-fit: cover;
+}
+
+/* 案例部分布局修改样式 */
+/* 资讯动画 */
+.jy-article-img {
+  box-shadow: var(--cnvs-box-shadow) !important;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.jy-article-img img,
+#customPortfolio .portfolio-image img,
+#jyarticle .entry-image img {
+  display: block;
+  width: 100% !important;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+#customPortfolio .portfolio-image img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+#jyarticle .entry-image img {
+  height: 11rem;
+  object-fit: cover;
+}
+
+/* 案例鼠标移入动画修改 */
+.jy-article-img img {
+  transition: all 0.5s;
+}
+.jy-article-img:hover img {
+  transform: scale(1.2);
+}
+
+/* 解决标签文字换行后内容不对齐 */
+.jy-flex-column-between {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* 解决使用 .jy-flex-column-between 后内部按钮宽度100%问题 */
+.jy-flex-column-between a {
+  width: 8rem;
+}
+
+/* footer信息盒子垂直居中 */
+.align-height {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* video下标签按钮置右 */
+.button-to-right {
+  margin-left: auto !important;
+  z-index: 2;
+}
+
+/* 解决业务范围盒子高度不一致 */
+.jy-business-box {
+  min-height: 13rem;
+}
+
+/* .button-reveal */
+.jy-button.button-reveal i {
+  opacity: 0;
+  left: auto !important;
+  right: 20px !important;
+  background-color: transparent;
+  transition: all 0.3s ease !important;
+}
+
+.jy-button:hover.button-reveal i {
+  color: #000;
+  opacity: 1;
+  right: 0 !important;
+  transform: translateX(-10px);
+  transition: all 0.3s ease !important;
+}
+.jy-button.button-reveal span {
+  transition: all 0.3s ease !important;
+}
+.jy-button.button-reveal:hover span {
+  color: #000;
+  left: -9% !important;
+  transition: all 0.3s ease !important;
+}
+
+/* .button-change */
+.jy-button.button-change {
+  --height: 2.875rem;
+  height: var(--height);
+  line-height: calc(var(--height) - 2px) !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  overflow: hidden;
+  display: inline-flex;
+  flex-direction: column-reverse;
+}
+
+.jy-button.button-change.btn-sm {
+  --height: 2rem;
+}
+.jy-button.button-change.btn-lg {
+  --height: 3rem;
+}
+
+.jy-button.button-change span {
+  position: relative;
+  display: block;
+  transition: transform 0.35s ease;
+  transform: translate3d(0px, 0%, 0px);
+  transform-style: preserve-3d;
+}
+
+.jy-button.button-change:hover span {
+  transform: translate3d(0px, 100%, 0px);
+}
+
+/* 颜色修改 */
+.jy-button-blue {
+  background-color: #0072ff;
+}
